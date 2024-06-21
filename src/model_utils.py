@@ -5,6 +5,8 @@ from util.index import *
 import torch
 from model_setup import ModelSetup
 import time
+from threading import Thread
+
 
 def load_models(embedding_model, llm):
     global model_setup
@@ -37,7 +39,7 @@ def upload_and_create_vector_store(file, embedding_model):
 def get_chat_history(inputs):
     res = []
     for human, ai in inputs:
-        res.append(f"<|im_start|>user:{human}\n<|im_end|>\n<|im_start|>assistant:{ai}<|im_end|>\n")
+        res.append(f"user: {human}\nassistant: {ai}\n")
     return "\n".join(res)
 
 
@@ -59,6 +61,7 @@ def bot(
     k_context=5,
     num_return_sequences=1,
 ):
+
     qa, streamer = conv_qa.create_conversation(
         model_setup.model,
         model_setup.tokenizer,
@@ -75,17 +78,18 @@ def bot(
 
     chat_history_formatted = get_chat_history(history[:-1])
 
-    from threading import Thread
-    def run_enhanced_rqa():
+    def run_qa():
         qa.invoke({"question": history[-1][0], "chat_history": chat_history_formatted})
 
-    t = Thread(target=run_enhanced_rqa,)
+    t = Thread(target=run_qa)
     t.start()
 
     history[-1][1] = ""
     for new_text in streamer:
-        history[-1][1]  += new_text
+        history[-1][1] += new_text
         yield history
+
+    t.join()
 
     # res = qa.invoke(
     #     {"question": history[-1][0], "chat_history": chat_history_formatted}
@@ -101,3 +105,4 @@ def clear_cuda_cache():
     torch.cuda.empty_cache()
     gc.collect()
     return None
+

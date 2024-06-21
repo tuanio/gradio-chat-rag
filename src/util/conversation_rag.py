@@ -33,7 +33,7 @@ class Conversation_RAG:
         device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
         # device = 'mps'
 
-        do_quantize = True
+        do_quantize = False
 
         if do_quantize:
             # bnb_config = transformers.BitsAndBytesConfig(
