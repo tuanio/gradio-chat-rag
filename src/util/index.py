@@ -26,15 +26,17 @@ def create_vector_store_index(
         pages = loader.load()
 
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=256, chunk_overlap=128
+            chunk_size=1024, chunk_overlap=128
         )
 
         documents = text_splitter.split_documents(pages)
 
     model_kwargs = {"device": "cpu"}
+    encode_kwargs = {'normalize_embeddings': False}
     embedding_model = HuggingFaceEmbeddings(
         model_name=embedding_model_repo_id,
-        model_kwargs=model_kwargs
+        model_kwargs=model_kwargs,
+        encode_kwargs=encode_kwargs
     )
 
     vectordb = FAISS.from_documents(documents, embedding_model)

@@ -8,11 +8,8 @@ with gr.Blocks(
     )
 ) as demo:
     gr.Markdown(
-        """# Retrieval Augmented Generation \n
-                     RAG (Retrieval-Augmented Generation) addresses the data freshness problem in Large Language Models (LLMs) like Llama-2, which lack awareness of recent events. LLMs perceive the world only through their training data, leading to challenges when needing up-to-date information or specific datasets. To tackle this, retrieval augmentation is employed, enabling relevant external knowledge from a knowledge base to be incorporated into LLM responses.
-                     RAG involves creating a knowledge base containing two types of knowledge: parametric knowledge from LLM training and source knowledge from external input. Data for the knowledge base is derived from datasets relevant to the use case, which are then processed into smaller chunks to enhance relevance and efficiency. Token embeddings, generated using models like RoBERTa, are crucial for retrieving context and meaning from the knowledge base.
-                     A vector database could be used to manage and search through the embeddings efficiently. The LangChain library facilitates interactions with the knowledge base, allowing LLMs to generate responses based on retrieved information. Generative Question Answering (GQA) or Retrieval Augmented Generation (RAG) techniques instruct the LLM to craft answers using knowledge base content. To enhance trust, answers can be accompanied by citations indicating the information source.
-                     RAG leverages a combination of external knowledge and LLM capabilities to provide accurate, up-to-date, and well-grounded responses. This approach is gaining traction in products such as AI search engines and conversational agents, highlighting the synergy between LLMs and robust knowledge bases.
+        """# Retrieval Augmented Generation - Chat for Vietnamese \n
+                Kết hợp RAG với VinaLLama trong việc ứng dụng chatbot vào hệ thống giáo dục.
                 """
     )
     with gr.Row():
@@ -23,10 +20,9 @@ with gr.Blocks(
                 with gr.Column(scale=1, variant="panel"):
                     embedding_model = gr.Dropdown(
                         choices=[
-                            "all-roberta-large-v1_1024d",
-                            "all-mpnet-base-v2_768d",
+                            "Fsoft-AIC/videberta-base",
                         ],
-                        value="all-roberta-large-v1_1024d",
+                        value="Fsoft-AIC/videberta-base",
                         label="Select the embedding model",
                     )
 
@@ -44,7 +40,7 @@ with gr.Blocks(
             instruction = gr.Textbox(
                 label="System instruction",
                 lines=3,
-                value="Use the following pieces of context to answer the question at the end by. Generate the answer based on the given context only.If you do not find any information related to the question in the given context, just say that you don't know, don't try to make up an answer. Keep your answer expressive.",
+                value="Bạn là trợ lý ảo thông minh. Bạn sẽ đọc nội dung từ ngữ cảnh để trả lời câu hỏi của người dùng. Trả lời ngắn gọn, đủ ý, nội dung bằng tiếng Việt.",
             )
             reset_inst_btn = gr.Button("Reset", variant="primary", size="sm")
 
@@ -79,22 +75,26 @@ with gr.Blocks(
             )
             reset_inst_btn.click(reset_sys_instruction, instruction, instruction)
 
-        with gr.Column(scale=1, variant="panel"):
+        with gr.Column(scale=2, variant="panel"):
             gr.Markdown("## Select the Generation Model")
 
             with gr.Row(equal_height=True):
                 with gr.Column(scale=1):
                     llm = gr.Dropdown(
-                        choices=["Llamav2-7B-Chat", "Falcon-7B-Instruct", "microsoft/phi-1_5"],
-                        value="Llamav2-7B-Chat",
+                        choices=[
+                            "VietnamAIHub/Vietnamese_LLama2_13B_8K_SFT_General_Domain_Knowledge",
+                            "vilm/vinallama-7b-chat",
+                            "vilm/VinaLlama2-14B"
+                        ],
+                        value="vilm/vinallama-7b-chat",
                         label="Select the LLM",
                     )
-                    hf_token = gr.Textbox(
-                        label="Enter your valid HF token_id", type="password"
-                    )
+                    # hf_token = gr.Textbox(
+                    #     label="Enter your valid HF token_id", type="password"
+                    # )
 
                 with gr.Column(scale=1):
-                    model_load_btn = gr.Button("Load model", variant="primary", scale=2)
+                    model_load_btn = gr.Button("Load model", variant="primary", scale=1)
                     load_success_msg = gr.Textbox(
                         show_label=False, lines=1, placeholder="Model loading ..."
                     )
@@ -102,7 +102,7 @@ with gr.Blocks(
                 [],
                 elem_id="chatbot",
                 label="Chatbox",
-                height=725,
+                height=500,
             )
 
             txt = gr.Textbox(
@@ -120,7 +120,7 @@ with gr.Blocks(
 
             model_load_btn.click(
                 load_models,
-                [hf_token, embedding_model, llm],
+                [embedding_model, llm],
                 load_success_msg,
                 api_name="load_models",
             )

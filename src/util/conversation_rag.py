@@ -22,18 +22,20 @@ class Conversation_RAG:
 
     def load_model_and_tokenizer(self):
         model_kwargs = {"device": "cpu"}
+        encode_kwargs = {'normalize_embeddings': False}
         embedding_model = HuggingFaceEmbeddings(
-            model_name=self.embedding_model_repo_id, model_kwargs=model_kwargs
+            model_name=self.embedding_model_repo_id,
+            model_kwargs=model_kwargs,
+            encode_kwargs=encode_kwargs
         )
         vectordb = FAISS.load_local(
             "./db/faiss_index", embedding_model, allow_dangerous_deserialization=True
         )
 
-        login(token=self.hf_token)
+        if self.hf_token:
+            login(token=self.hf_token)
 
-        # device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
-
-        device = "mps"
+        device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
 
         # bnb_config = transformers.BitsAndBytesConfig(
         #     load_in_4bit=True,
@@ -42,15 +44,15 @@ class Conversation_RAG:
         #     bnb_4bit_compute_dtype=bfloat16
         # )
 
-        # bnb_config = transformers.BitsAndBytesConfig(
-        #     load_in_8bit=True,
-        # )
+        bnb_config = transformers.BitsAndBytesConfig(
+            load_in_8bit=True,
+        )
 
         model = transformers.AutoModelForCausalLM.from_pretrained(
             self.llm_repo_id,
             trust_remote_code=True,
-            # quantization_config=bnb_config,
-            device_map=device,
+            quantization_config=bnb_config,
+            device_map='auto',
         )
         model.eval()
 
@@ -71,12 +73,13 @@ class Conversation_RAG:
         top_p=0.95,
         k_context=5,
         num_return_sequences=1,
-        instruction="Use the following pieces of context to answer the question at the end by. Generate the answer based on the given context only. If you do not find any information related to the question in the given context, just say that you don't know, don't try to make up an answer. Keep your answer expressive.",
-    ):
+        instruction="Bạn là trợ lý ảo thông minh. Bạn sẽ đọc nội dung từ ngữ cảnh để trả lời câu hỏi của người dùng. Trả lời ngắn gọn, đủ ý, nội dung bằng tiếng Việt.",
+    ):  
+        streamer = transformers.TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
         generate_text = transformers.pipeline(
             model=model,
             tokenizer=tokenizer,
-            return_full_text=True,  # langchain expects the full text
+            return_full_text=False,  # langchain expects the full text
             task="text-generation",
             temperature=temperature,  # 'randomness' of outputs, 0.0 is the min and 1.0 the max
             max_new_tokens=max_new_tokens,  # mex number of tokens to generate in the output
@@ -84,20 +87,31 @@ class Conversation_RAG:
             top_k=top_k,
             top_p=top_p,
             num_return_sequences=num_return_sequences,
+            streamer=streamer,
+            eos_token_id=tokenizer.eos_token_id
         )
 
         llm = HuggingFacePipeline(pipeline=generate_text)
 
-        system_instruction = f"User: {instruction}\n"
-        template = (
-            system_instruction
-            + """
-        context:\n
-        {context}\n
-        Question: {question}\n
-        Assistant:
-        """
-        )
+        # system_instruction = f"Người dùng: {instruction}\n"
+        # template = (
+        #     system_instruction
+        #     + """
+        # Ngữ cảnh:\n
+        # {context}\n
+        # Câu hỏi: {question}\n
+        # Trợ lý:
+        # """
+        # )
+
+        template = f"<|im_start|>system: {instruction}<|im_end|>"
+        template += """
+        <|im_start|>
+        user: {context}
+        question: {question}
+        <|im_end|>
+        <|im_start|>
+        assistant:"""
 
         QCA_PROMPT = PromptTemplate(
             input_variables=["context", "question"], template=template
@@ -111,4 +125,8 @@ class Conversation_RAG:
             get_chat_history=lambda h: h,
             verbose=True,
         )
+
+        if streamer:
+            return qa, streamer
+
         return qa

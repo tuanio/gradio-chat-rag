@@ -1,7 +1,6 @@
 gradio
 transformers
 accelerate
-Xformers
 langchain
 bitsandbytes
 sentence_transformers
