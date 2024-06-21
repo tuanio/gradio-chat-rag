@@ -44,8 +44,8 @@ python src/gradio_chatbot.py
 
 Hệ thống được trang bị bộ đôi mô hình mạnh mẽ:
 
-* **Embedding model:** Sử dụng Fsoft-AIC/videberta-base, mô hình ngôn ngữ BERT tiếng Việt do FPT AI phát triển, vượt trội PhoBERT - từng là mô hình tiếng Việt tốt nhất. Model này tạo vector biểu diễn cho các đoạn văn bản, giúp truy vấn thông tin chính xác dựa trên ngữ cảnh câu hỏi.
-* **LLM:** Vinallama-7b-chat từ vilm/vinallama-7b-chat, phiên bản tiếng Việt của LLama do **vilm** phát triển. Model này sinh văn bản, trả lời câu hỏi dựa trên nội dung được cung cấp. 
+* **Embedding model:** Sử dụng [Fsoft-AIC/videberta-base](https://huggingface.co/Fsoft-AIC/videberta-base), mô hình ngôn ngữ BERT tiếng Việt do FPT AI phát triển, vượt trội PhoBERT - từng là mô hình tiếng Việt tốt nhất. Model này tạo vector biểu diễn cho các đoạn văn bản, giúp truy vấn thông tin chính xác dựa trên ngữ cảnh câu hỏi.
+* **LLM:** Vinallama-7b-chat từ [vilm/vinallama-7b-chat](https://huggingface.co/vilm/vinallama-7b-chat), phiên bản tiếng Việt của LLama do **vilm** phát triển, paper gốc [paper VinaLLaMA](https://arxiv.org/abs/2312.11011). Model này sinh văn bản, trả lời câu hỏi dựa trên nội dung được cung cấp. 
 
 **Khả năng vượt trội:**
 
