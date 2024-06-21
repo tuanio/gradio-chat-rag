@@ -7,27 +7,22 @@ from langchain.memory import ConversationBufferMemory
 from langchain_huggingface import HuggingFacePipeline
 from huggingface_hub import login
 from langchain.prompts import PromptTemplate
+from util.utils import load_embedding_model
 
 
 class Conversation_RAG:
     def __init__(
         self,
-        hf_token="",
         embedding_model_repo_id="sentence-transformers/all-roberta-large-v1",
         llm_repo_id="meta-llama/Llama-2-7b-chat-hf",
+        hf_token="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",
     ):
         self.hf_token = hf_token
         self.embedding_model_repo_id = embedding_model_repo_id
         self.llm_repo_id = llm_repo_id
 
     def load_model_and_tokenizer(self):
-        model_kwargs = {"device": "cpu"}
-        encode_kwargs = {'normalize_embeddings': False}
-        embedding_model = HuggingFaceEmbeddings(
-            model_name=self.embedding_model_repo_id,
-            model_kwargs=model_kwargs,
-            encode_kwargs=encode_kwargs
-        )
+        embedding_model = load_embedding_model(self.embedding_model_repo_id)
         vectordb = FAISS.load_local(
             "./db/faiss_index", embedding_model, allow_dangerous_deserialization=True
         )
@@ -36,24 +31,34 @@ class Conversation_RAG:
             login(token=self.hf_token)
 
         device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
+        # device = 'mps'
 
-        # bnb_config = transformers.BitsAndBytesConfig(
-        #     load_in_4bit=True,
-        #     bnb_4bit_quant_type='nf4',
-        #     bnb_4bit_use_double_quant=True,
-        #     bnb_4bit_compute_dtype=bfloat16
-        # )
+        do_quantize = True
 
-        bnb_config = transformers.BitsAndBytesConfig(
-            load_in_8bit=True,
-        )
+        if do_quantize:
+            # bnb_config = transformers.BitsAndBytesConfig(
+            #     load_in_4bit=True,
+            #     bnb_4bit_quant_type='nf4',
+            #     bnb_4bit_use_double_quant=True,
+            #     bnb_4bit_compute_dtype=bfloat16
+            # )
 
-        model = transformers.AutoModelForCausalLM.from_pretrained(
-            self.llm_repo_id,
-            trust_remote_code=True,
-            quantization_config=bnb_config,
-            device_map='auto',
-        )
+            bnb_config = transformers.BitsAndBytesConfig(
+                load_in_8bit=True,
+            )
+
+            model = transformers.AutoModelForCausalLM.from_pretrained(
+                self.llm_repo_id,
+                trust_remote_code=True,
+                quantization_config=bnb_config,
+                device_map='auto',
+            )
+        else:
+            model = transformers.AutoModelForCausalLM.from_pretrained(
+                self.llm_repo_id,
+                trust_remote_code=True,
+                device_map='auto',
+            )
         model.eval()
 
         print("Device:", model.device)

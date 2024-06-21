@@ -3,12 +3,24 @@ import numpy as np
 import pickle
 
 from langchain_community.vectorstores import DocArrayInMemorySearch, FAISS, Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.document_loaders import CSVLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from util.utils import load_embedding_model
 
+chunk_size = 2000
+chunk_overlap = 500
+
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=chunk_size, chunk_overlap=chunk_overlap
+)
+
+def load_default_documents():
+    path = 'data/chatbot_knowledge.pdf'
+    pages = PyPDFLoader(path).load()
+    documents = text_splitter.split_documents(pages)
+    return documents
 
 def create_vector_store_index(
     file_path, embedding_model_repo_id="sentence-transformers/all-roberta-large-v1"
@@ -25,19 +37,12 @@ def create_vector_store_index(
         loader = PyPDFLoader(file_path)
         pages = loader.load()
 
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1024, chunk_overlap=128
-        )
-
         documents = text_splitter.split_documents(pages)
 
-    model_kwargs = {"device": "cpu"}
-    encode_kwargs = {'normalize_embeddings': False}
-    embedding_model = HuggingFaceEmbeddings(
-        model_name=embedding_model_repo_id,
-        model_kwargs=model_kwargs,
-        encode_kwargs=encode_kwargs
-    )
+    # always add chatbot_knowledge inside
+    documents += load_default_documents()
+
+    embedding_model = load_embedding_model(embedding_model_repo_id)
 
     vectordb = FAISS.from_documents(documents, embedding_model)
     file_output = "./db/faiss_index"

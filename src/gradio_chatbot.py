@@ -21,6 +21,7 @@ with gr.Blocks(
                     embedding_model = gr.Dropdown(
                         choices=[
                             "Fsoft-AIC/videberta-base",
+                            "Fsoft-AIC/videberta-xsmall",
                         ],
                         value="Fsoft-AIC/videberta-base",
                         label="Select the embedding model",
@@ -84,7 +85,8 @@ with gr.Blocks(
                         choices=[
                             "VietnamAIHub/Vietnamese_LLama2_13B_8K_SFT_General_Domain_Knowledge",
                             "vilm/vinallama-7b-chat",
-                            "vilm/VinaLlama2-14B"
+                            "vilm/VinaLlama2-14B",
+                            "vilm/vinallama-2.7b",
                         ],
                         value="vilm/vinallama-7b-chat",
                         label="Select the LLM",
@@ -102,7 +104,7 @@ with gr.Blocks(
                 [],
                 elem_id="chatbot",
                 label="Chatbox",
-                height=500,
+                height=600,
             )
 
             txt = gr.Textbox(
