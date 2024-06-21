@@ -9,4 +9,4 @@ PyPDF
 langchain-community
 langchain-huggingface
 langchain_experimental
-"unstructured[all-docs]"
+unstructured[all-docs]
