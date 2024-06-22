@@ -91,9 +91,7 @@ with gr.Blocks(
                         value="vilm/vinallama-7b-chat",
                         label="Select the LLM",
                     )
-                    # hf_token = gr.Textbox(
-                    #     label="Enter your valid HF token_id", type="password"
-                    # )
+                    do_quantize = gr.Checkbox(label="Do quantization 8-bit", info="Reduce memory by 2 (good for >10B models)")
 
                 with gr.Column(scale=1):
                     model_load_btn = gr.Button("Load model", variant="primary", scale=1)
@@ -122,7 +120,7 @@ with gr.Blocks(
 
             model_load_btn.click(
                 load_models,
-                [embedding_model, llm],
+                [embedding_model, llm, do_quantize],
                 load_success_msg,
                 api_name="load_models",
             )

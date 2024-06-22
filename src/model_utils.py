@@ -8,9 +8,9 @@ import time
 from threading import Thread
 
 
-def load_models(embedding_model, llm):
+def load_models(embedding_model, llm, do_quantize):
     global model_setup
-    model_setup = ModelSetup(embedding_model, llm)
+    model_setup = ModelSetup(embedding_model, llm, do_quantize)
     success_prompt = model_setup.setup()
     return success_prompt
 
