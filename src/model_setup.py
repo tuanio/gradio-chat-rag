@@ -8,7 +8,7 @@ class ModelSetup:
     def __init__(self, embedding_model, llm, do_quantize = False):
         self.embedding_model = embedding_model
         self.llm = llm
-        self.do_quantize
+        self.do_quantize = do_quantize
     
     def setup(self):
         conv_rag = Conversation_RAG(self.embedding_model, self.llm)
