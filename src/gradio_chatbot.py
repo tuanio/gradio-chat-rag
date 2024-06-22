@@ -1,5 +1,6 @@
 import gradio as gr
 from model_utils import *
+from dotenv import load_dotenv
 
 
 with gr.Blocks(
@@ -22,8 +23,12 @@ with gr.Blocks(
                         choices=[
                             "Fsoft-AIC/videberta-base",
                             "Fsoft-AIC/videberta-xsmall",
+                            "vinai/phobert-large",
+                            "vinai/phobert-base",
+                            "bkai-foundation-models/vietnamese-bi-encoder",
+                            "openai-model",
                         ],
-                        value="Fsoft-AIC/videberta-base",
+                        value="openai-model",
                         label="Select the embedding model",
                     )
 
@@ -158,5 +163,6 @@ with gr.Blocks(
 
 
 if __name__ == "__main__":
+    load_dotenv()
     demo.queue()
     demo.launch(max_threads=3, debug=True, share=True)

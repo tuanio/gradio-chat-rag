@@ -10,3 +10,5 @@ langchain-community
 langchain-huggingface
 langchain_experimental
 unstructured[all-docs]
+langchain-openai
+python-dotenv

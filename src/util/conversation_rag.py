@@ -128,8 +128,7 @@ class Conversation_RAG:
         # )
 
         template = f"<|im_start|>system: {instruction}<|im_end|>"
-        template += """
-        <|im_start|>
+        template += """<|im_start|>
         user: {context}
         question: {question}
         <|im_end|>

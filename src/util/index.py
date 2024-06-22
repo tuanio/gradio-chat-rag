@@ -6,18 +6,10 @@ from langchain_community.vectorstores import DocArrayInMemorySearch, FAISS, Chro
 from langchain_community.document_loaders import CSVLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_community.document_loaders import UnstructuredFileLoader
 
-from util.utils import load_embedding_model
-
-# chunk_size = 500
-# chunk_overlap = 150
-
-# text_splitter = RecursiveCharacterTextSplitter(
-#     chunk_size=chunk_size, chunk_overlap=chunk_overlap
-# )
+from util.utils import load_embedding_model, load_text_splitter
 
 def load_default_documents(text_splitter):
     path = 'data/chatbot_knowledge.pdf'
@@ -32,8 +24,7 @@ def create_vector_store_index(
     file_type = file_path_split[-1].rstrip("/")
 
     embedding_model = load_embedding_model(embedding_model_repo_id)
-    text_splitter = SemanticChunker(embedding_model,
-                        breakpoint_threshold_type="percentile")
+    text_splitter = load_text_splitter(is_semantic=False)
 
     # if file_type == "csv":
     #     print(file_path)

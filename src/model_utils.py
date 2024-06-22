@@ -79,7 +79,7 @@ def bot(
     chat_history_formatted = get_chat_history(history[:-1])
 
     def run_qa():
-        qa.invoke({"question": history[-1][0], "chat_history": chat_history_formatted})
+        qa.invoke({"question": history[-1][0], "chat_history": ''})
 
     t = Thread(target=run_qa)
     t.start()
