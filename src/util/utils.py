@@ -25,7 +25,7 @@ def load_text_splitter(is_semantic=False, embedding_model=None):
             embedding_model, breakpoint_threshold_type="percentile"
         )
     else:
-        chunk_size = 500
+        chunk_size = 1000
         chunk_overlap = 100
 
         text_splitter = RecursiveCharacterTextSplitter(
