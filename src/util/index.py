@@ -30,7 +30,7 @@ def create_vector_store_index(
 
     # if file_type == "csv":
     #     print(file_path)
-    #     loader = CSVLoader(file_path=file_path)
+    #     loader = CSVLoader(file_path=file_path)``
     #     documents = loader.load()
     # elif file_type == "pdf":
     #     loader = PyPDFLoader(file_path)

@@ -139,4 +139,3 @@ if __name__ == "__main__":
 
     demo.queue()
     demo.launch(max_threads=3, debug=True, share=True)
-

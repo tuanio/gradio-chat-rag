@@ -1,599 +1,207 @@
-Chatbot Knowledge 1
-Chatbot Knowledge
 Giới thiệu Chatbot - trợ lý ảo, trợ lý AI.
-Bạn là trợ lý AI thông minh tên là GodAI. Nhiệm vụ của bạn là trả lời câu hỏi của
-người dùng dựa trên thông tin được cung cấp (nếu thông tin được cung cấp
-không
-liên quan thì có thể bỏ qua). Bạn làm rất tốt trong những tác vụ hỏi đáp thông
-tin.
-Trả lời chính xác và ngắn gọn, tất cả nội dung trả lời bằng tiếng Việt.
-Câu hỏi:
-vì sao trong công thức/hàm, Excel thường sử dụng địa chỉ các ô tính chứa số
-liệu
-thay cho số liệu trực tiếp?
-Trả lời:
-Excel thường sử dụng địa chỉ các ô tính chứa số liệu thay cho số liệu trực tiếp vì
-sử dụng địa chỉ các ô tính chứa số liệu sẽ tiết kiệm thời gian, khả năng chính
-xác
-cao.
-Câu hỏi:
+Bạn là trợ lý AI thông minh tên là GodAI. Nhiệm vụ của bạn là trả lời câu hỏi của người dùng dựa trên thông tin được cung cấp (nếu thông tin được cung cấp không liên quan thì có thể bỏ qua). Bạn làm rất tốt trong những tác vụ hỏi đáp thông tin. Trả lời chính xác và ngắn gọn, tất cả nội dung trả lời bằng tiếng Việt.
+Câu hỏi: 
+vì sao trong công thức/hàm, Excel thường sử dụng địa chỉ các ô tính chứa số liệu thay cho số liệu trực tiếp?
+Trả lời: 
+Excel thường sử dụng địa chỉ các ô tính chứa số liệu thay cho số liệu trực tiếp vì sử dụng địa chỉ các ô tính chứa số liệu sẽ tiết kiệm thời gian, khả năng chính xác cao.
+Câu hỏi: 
 Có bao nhiêu kiểu địa chỉ trong Excel? Nêu cụ thể. Phân biệt 3 kiểu địa chỉ đó.
-Trả lời:
+Trả lời: 
 Có 3 kiểu địa chỉ:
-Địa chỉ tương đối là địa chỉ sẽ thay đổi tên hàng và tên cột khi sao chép công
-thức. Ví dụ: B5, C7
-Địa chỉ tuyệt đối là địa chỉ không thay đổi tên hàng và tên cột khi sao chép công
-thức. Ví dụ: $B$5
-Địa chỉ hỗn hợp là địa chỉ chỉ thay đổi tên hàng hoặc tên cột khi sao chép công
-thức. Ví dụ: $B5, B$5.
-Câu hỏi: sự phát triển của máy tính khi so sánh hình ảnh máy tính điện tử ENIAC
-với máy tính bảng mỏng nhẹ hiện nay?
-Trả lời:
-Máy tính thời đầu có kích thước rất to bằng cả một căn phòng và đã được cải
-tiến,
-phát triển vượt bậc để trở thành những máy tính bảng mỏng nhẹ như ngày hôm
-nay.
+Địa chỉ tương đối là địa chỉ sẽ thay đổi tên hàng và tên cột khi sao chép công thức. Ví dụ: B5, C7
+Địa chỉ tuyệt đối là địa chỉ không thay đổi tên hàng và tên cột khi sao chép công thức. Ví dụ: $B$5
+Địa chỉ hỗn hợp là địa chỉ chỉ thay đổi tên hàng hoặc tên cột khi sao chép công thức. Ví dụ: $B5, B$5.
+Câu hỏi: sự phát triển của máy tính khi so sánh hình ảnh máy tính điện tử ENIAC với máy tính bảng mỏng nhẹ hiện nay?
+Trả lời: 
+Máy tính thời đầu có kích thước rất to bằng cả một căn phòng và đã được cải tiến, phát triển vượt bậc để trở thành những máy tính bảng mỏng nhẹ như ngày hôm nay.
 Câu hỏi: Nêu lịch sử hình thành máy tính điện tử qua từng thế hệ:
 Trả lời: Thế hệ thứ nhất
-Chatbot Knowledge 2
-Thời gian: 1945 – 1955
-Đặc điểm:
-Công nghệ: ống chân không, van nhiệt điện.
-Đầu vào: thẻ đục lỗ và băng giấy.
-Kích thước: lớn.
-Tiêu thụ nhiều điện và tỏa ra nhiều nhiệt.
-Hiệu quả: kết quả không đảm bảo luôn đáng tin cậy.
-Ví dụ: ENIAC (1945),…
+- Thời gian: 1945 – 1955
+- Đặc điểm:
++ Công nghệ: ống chân không, van nhiệt điện.
++ Đầu vào: thẻ đục lỗ và băng giấy.
++ Kích thước: lớn.
++ Tiêu thụ nhiều điện và tỏa ra nhiều nhiệt.
++ Hiệu quả: kết quả không đảm bảo luôn đáng tin cậy.
+- Ví dụ: ENIAC (1945),…
 ENIAC 1945
 b) Thế hệ thứ hai
-Thời gian: 1955 – 1965
-Đặc điểm:
-Công nghệ: bóng bán dẫn và lõi từ
-Kích thước: nhỏ hơn.
-Tiêu thụ ít điện năng hơn và tỏa ra ít nhiệt hơn
-Hiệu quả: tính toán đáng tin cậy và nhanh hơn.
-Ví dụ: IBM 1602 (1959), UNIVAC 1108 (1964),…
-1956: RAMAC IBM 350 ra đời → sự xuất hiện của máy tính có ổ đĩa.
+- Thời gian: 1955 – 1965
+- Đặc điểm:
++ Công nghệ: bóng bán dẫn và lõi từ
++ Kích thước: nhỏ hơn.
++ Tiêu thụ ít điện năng hơn và tỏa ra ít nhiệt hơn
++ Hiệu quả: tính toán đáng tin cậy và nhanh hơn.
+- Ví dụ: IBM 1602 (1959), UNIVAC 1108 (1964),…
+- 1956: RAMAC IBM 350 ra đời → sự xuất hiện của máy tính có ổ đĩa.
 IBM 1602 (1959)
 UNIVAC 1108 (1964)
 Ổ đĩa cứng RAMAC IBM 350 (1956)
 c) Thế hệ thứ ba
-Thời gian: 1965 - 1974
-Đặc điểm:
-Công nghệ: mạch tích hợp IC.
-Kích thước: nhỏ hơn.
-Tiêu thụ ít điện năng hơn và tỏa ra ít nhiệt hơn
-Hiệu quả: tính toán nhanh hơn.
-Chi phí bảo trì ít hơn.
-Chatbot Knowledge 3
-Ví dụ: IBM-360 (1964) , Honeywell-6000,…
-Năm 1971: máy tính cá nhân ra đời.
+- Thời gian: 1965 - 1974
+- Đặc điểm:
++ Công nghệ: mạch tích hợp IC.
++ Kích thước: nhỏ hơn.
++ Tiêu thụ ít điện năng hơn và tỏa ra ít nhiệt hơn
++ Hiệu quả: tính toán nhanh hơn.
++ Chi phí bảo trì ít hơn.
+- Ví dụ: IBM-360 (1964) , Honeywell-6000,…
+- Năm 1971: máy tính cá nhân ra đời.
 IBM System/360 (1964)
 Kenbak-1 – chiếc máy tính cá nhân đầu tiên trên thế giới
 d) Thế hệ thứ tư
-Thời gian: 1974 – 1989
-Đặc điểm:
-Công nghệ: mạch tích hợp mật độ cao VLSI.
-Kích thước: rất nhỏ, có thể di động.
-Dễ sử dụng
-Hiệu quả: chạy nhanh và đáng tin cậy.
-Giá thành sản xuất giảm xuống thấp.
-Ví dụ: DEC 10, SAO 1000, PDP 11,… và siêu máy tính CRAY-X-MP
-1981: máy tính Osborne 1 ra đời
+- Thời gian: 1974 – 1989
+- Đặc điểm:
++ Công nghệ: mạch tích hợp mật độ cao VLSI.
++ Kích thước: rất nhỏ, có thể di động.
++ Dễ sử dụng
++ Hiệu quả: chạy nhanh và đáng tin cậy.
++ Giá thành sản xuất giảm xuống thấp.
+- Ví dụ: DEC 10, SAO 1000, PDP 11,… và siêu máy tính CRAY-X-MP
+- 1981: máy tính Osborne 1 ra đời
 → sự xuất hiện của máy tính xách tay.
 DEC 10 (1966)
 PDP 11 (1970)
 Siêu máy tính CRAY-X-MP (1982)
 Osborne 1 (1981)
 e) Thế hệ thứ năm
-Thời gian: 1990 - nay
-Đặc điểm:
-Công nghệ: mạch tích hợp mật độ siêu cao ULSI
-Khả năng xử lí song song của phần cứng và phần mềm AI.
-Ví dụ: IBM Simon (1992), Iphone (2007),…
-Câu hỏi:
+- Thời gian: 1990 - nay
+- Đặc điểm:
++ Công nghệ: mạch tích hợp mật độ siêu cao ULSI
++ Khả năng xử lí song song của phần cứng và phần mềm AI.
+- Ví dụ: IBM Simon (1992), Iphone (2007),…
+Câu hỏi: 
 sự giao tiếp giữa người – máy tính đã thay đổi ntn qua các thế hệ máy tính?
-Trả lời:
-• Thế hệ thứ nhất: băng thông, đục lỗ, in giấy
-• Thế hệ thứ tư: bàn phím, chuột, màn hình
-• Thế hệ thứ năm: cảm ứng, giọng nói
-Câu hỏi: cho biết máy tính mang lại những lợi ích gì trong việc học tập của
-Chatbot Knowledge 4
-em
-và trong việc giảng dạy của các thầy cô?
-Trả lời:
+Trả lời: 
+•	Thế hệ thứ nhất: băng thông, đục lỗ, in giấy
+•	Thế hệ thứ tư: bàn phím, chuột, màn hình
+•	Thế hệ thứ năm: cảm ứng, giọng nói
+Câu hỏi: cho biết máy tính mang lại những lợi ích gì trong việc học tập của em và trong việc giảng dạy của các thầy cô?
+Trả lời: 
 Máy tính giúp trao đổi thông tin, giao tiếp xã hội
-Máy tính giúp học tập, nâng cao trình độ, bồi dưỡng kiến thức
-Các dịch vụ và tiện ích khác của máy tính
++ Máy tính giúp học tập, nâng cao trình độ, bồi dưỡng kiến thức
++ Các dịch vụ và tiện ích khác của máy tính
 Câu hỏi: Trình bày các bước lọc dữ liệu?
-Trả lời: Bước 1: Nháy chuột vào một ô tính bất kì trong bảng dữ liệu cần sắp
-xếp
-hoặc lọc (ví dụ ô C10 trong Hình 1).
+Trả lời: Bước 1: Nháy chuột vào một ô tính bất kì trong bảng dữ liệu cần sắp xếp hoặc lọc (ví dụ ô C10 trong Hình 1).
 Bước 2: Chọn dải lệnh Data trên bảng chọn chức năng.
 Bước 3: Nháy chuột vào biểu tượng Filter trong nhóm lệnh Sort & Filter.
-Sau Bước 3, biểu tượng sẽ xuất hiện tại cạnh bên phải các ô tiêu đề của tất
-cả các cột trong vùng dữ liệu. Lúc này bảng dữ liệu đã sẵn sàng cho các
-thao tác
-sắp xếp và lọc dữ liệu.
+Sau Bước 3, biểu tượng   sẽ xuất hiện tại cạnh bên phải các ô tiêu đề của tất cả các cột trong vùng dữ liệu. Lúc này bảng dữ liệu đã sẵn sàng cho các thao tác sắp xếp và lọc dữ liệu.
 Câu hỏi: Trình bày các bước lọc dữ liệu theo điều kiện?
-Trả lời:
+Trả lời: 
 Bước 1: Nháy chuột vào biểu tượng mũi tên bên cạnh tiêu đề cột muốn lọc
 Bước 2: Chọn Number Filters hoặc Text Filters
 Bước 3: Chọn kiểu điều kiện phù hợp
 Bước 4: Điền các tham số, nhấn OK
-1. Tham vấn là gì? Sự khác nhau giữa tham vấn tâm lý và tư vấn tâm lý?
-Tham vấn là một tiến trình tương tác giữa nhà tham vấn (NTV) và thân chủ
-(TC)
-– người đang có vấn đề, khó khăn về tâm lý muốn được giúp đỡ nhằm giúp
-TC
-chấp nhận thực tế của mình, xác định tiềm năng bản thân từ đó tự giải
-quyết vấn
-đề của mình.
-Tâm lý là một ngành khoa học khá mới mẻ ở VN, chính vì vậy hiện nay nước
-ta
-vẫn chưa thống nhất về việc sử dụng khái niệm tham vấn hay tư vấn tâm lý.
-Tuy
-nhiên giữa tư vấn và tham vấn có những nét khác biệt khá cơ bản.
-2. Nhà Tâm lý học đường - họ là ai?
-Nhà tâm lý học đường là một nhà sư phạm được cấp bằng đào tạo về tham
-Chatbot Knowledge 5
-vấn học đường với những ký năng chuyên biệt để hỗ trợ việc học, nhu cầu
-phát triển cá nhân, xã hội và nghề nghiệp của học sinh.
-Ở các nước phát triển, nhà tâm lý học đường (School Psychologist) là thành
-phần
-không thể thiếu trong hệ thống trường học. Nhiệm vụ chính của họ là giúp
-học
-sinh thành công trong học tập, xã hội và đời sống tình cảm. Ngoài ra họ còn
-phối
-hợp với giáo viên, phụ huynh, các nhà chuyên môn khác nhằm tạo môi
-trường
-học tập an toàn, lành mạnh cho tất cả học sinh.
-Lắng nghe - Một trong những kĩ năng quan trọng của nhân viên tham vấn
-học đường
-3. Nhà tham vấn có thể biết được suy nghĩ của người khác?
-Nhiều học sinh không muốn hoặc xấu hổ khi nói ra những suy nghĩ, diễn
-biến
-tâm lý của mình, cho rằng chỉ cần vài câu đơn giản thì nhà tham vấn có thể
-đoán
-được những suy nghĩ trong lòng mình, nếu không thì cho rằng trình độ của
-người
-tham vấn không cao. Thực ra, nhà tham vấn cũng là người, việc am hiểu
-ngôn
-ngữ cơ thể có thể giúp nhà họ nhận biết những mâu thuẫn giữa lời nói và cử
-chỉ
-của học sinh, nhưng cũng không thể giúp họ biết được học sinh thật sự
-đang nghĩ
-gì. Vì vậy việc cung cấp thông tin rõ ràng, tường tận sẽ giúp tiến trình tham
-vấn hiệu quả hơn.
-4. Giáo viên phụ trách phòng tham vấn học đường sẽ giúp giáo viên trừng trị
-những học sinh chưa ngoan?
-Việc học sinh tự nguyện tìm đến hoặc được gửi đến phòng tham vấn tâm lý
-nhằm mục đích lắng nghe các em, hiểu được những suy nghĩ, tâm tư tình
-cảm của các em chứ không phải các em được gửi đến phòng tham vấn để
-chịu một hình thức trừng phạt nào cả. Tuy nhiên, trong khả năng chuyên
-môn
-của mình, các nhà tham vấn sẽ dùng các kỹ năng để tiếp cận các em, giúp
-các em
-hiểu hơn về những suy nghĩ, tình cảm, và hành động của mình để từ đó có
-Chatbot Knowledge 6
-thể có
-được những thay đổi tích cực.
-5. Tham vấn tâm lý ở trường là dành riêng cho học sinh hay là cho cả các bậc
-phụ huynh?
-Mục đích của tham vấn trường học là giúp đỡ học sinh và gia đình cũng là
-một
-yếu tố trong cuộc sống của học sinh. Vì vậy, khi các bậc phụ huynh có nhu
-cầu
-trao đổi và cần sự trợ giúp, các bậc phụ huynh có thể đăng ký để được
-tham
-vấn. Tuy nhiên, trong những trường hợp cần thiết, cán bộ tham vấn có thể
-giới
-thiệu các bậc phụ huynh đến các dịch vụ trợ giúp có hiệu quả hơn như đến
-phòng
-tham vấn gia đình, tham gia các lớp kỹ năng….
-6. Có phải những học sinh tìm đến phòng tham vấn học đường đều là những
-học sinh “có vấn đề”?
-Ở nước ta tham vấn tâm lý nói chung và tham vấn học đường nói riêng là
-lĩnh
-vực mới và phát triền tương đối muộn, đa số mọi người còn khá e ngại trong
-việc
-tiếp cận với các hoạt động này. Học sinh thông thường đều nhìn trước nhìn
-sau,
-lấy hết can đảm mới dám bước vào phòng tham vấn, dưới sự bảo đảm nhiều
-lần
-của nhà tham vấn mới dám bộc lộ tâm trạng, tình cảm thật của mình. Vì
-trong
-mắt nhiều người, người đến phòng tham vấn là những người không bình
-thường,
-có vấn đề về tâm lý hoặc bệnh tinh thần. Thực ra, đại đa số những học sinh
-tìm đến phòng tham vấn học đường đều là những người có tâm lý bình
-thường. Trong cuộc sống, các em gặp phải những vấn đề mà bản thân
-không thể
-giải quyết được như: vấn đề học tập, vấn đề trong giao tiếp, vấn đề trong
-tình yêu,
-trong quan hệ với gia đình, lựa chọn nghề nghiệp… Những vấn đề này là
-một bộ
-phận trong cuộc sống của chúng ta, việc tìm đến phòng tâm lý học đường
-Chatbot Knowledge 7
-cho
-thấy những học sinh này biết quan tâm, chăm sóc sức khỏe tinh thần của
-mình và
-có mục tiêu cuộc sống tương đối cao, hy vọng thông qua việc tham vấn để
-tự
-hoàn thiện bản thân, không tránh né, phủ nhận vấn đề.
-Khi mệt mỏi, căng thẳng do học tập học sinh có thể tìm đến P. TVHĐ để
-được hỗ trợ
-7. Em có thể chia sẻ những điều bức xúc của mình về giáo viên dạy toán với
-giáo viên phụ trách phòng tham vấn học đường? Liệu những điều này có bị
-tiết lộ? Em sẽ bị giáo viên dạy toán ”đì” trong tương lai?
-Một trong những nguyên tắc cơ bản nhất của tham vấn tâm lý bảo mật
-thông
-tin. Nhân viên tham vấn học đường sẽ có trách nhiệm bảo mật tất cả những
-thông
-tin học sinh cung cấp cho mình và có thể phải chịu trách nhiệm trước pháp
-luật
-nếu cố tình tiết lộ thông tin của học sinh. Thông tin chỉ được tiết lộ trong
-các
-trường hợp sau: học sinh cho phép tiết lộ, chia sẻ thông tin; học sinh có
-nguy cơ
-làm hại đến bản thân và người khác (có ý định tự tử hoặc giết người); do yêu
-cầu
-của các cơ quan an ninh, pháp luật (phải thông báo cho học sinh biết). Vì
-vậy các
-em học sinh hoàn toàn có thể yên tâm khi chia sẻ câu chuyện với nhà tham
-vấn!
-8. Những người trẻ tuổi, chưa có nhiều kinh nghiệm sống có thể làm tốt công
-tác tham vấn tâm lý?
-Không thể phủ nhận một điều, những nhà tham vấn có nhiều kinh nghiêm
-sống
-sẽ dễ dàng hơn trong việc thấu cảm và nhìn nhận vấn đề của thân chủ. Tuy
-nhiên
-một NTV lớn tuổi và có nhiều kinh nghiệm chưa hẳn là một nhà tham vấn
-giỏi.
-Vì một NTV tâm lý giỏi phải là người có những năng lực và phẩm chất khá
-riêng
-biệt. Thứ nhất họ phải là người có kiến thức về quá trình phát triển tâm lý ở
-Chatbot Knowledge 8
-người:
-nhận thức, cảm xúc và hành vi của con người. Thứ hai, họ phải là người có
-khả
-năng giao tiếp, lắng nghe cũng như biết cách khai thác các cảm xúc, nhận
-thức và
-các biểu hiện của TC. Họ được đào tạo cơ bản về kỹ năng tham vấn cũng
-như các
-lớp học dành cho việc trợ giúp tâm lý cho TC. Họ cũng là người có những
-phẩm
-chất đặc biệt dành cho người làm tham vấn như khả năng chấp nhận, khả
-năng
-thấu cảm, sự trung thực…Do vậy độ tuổi hay trải nghiệm của NTV không
-quyết định mức độ thành công của buổi tham vấn.
-9. Em đang gặp khó khăn trong quan hệ với cô bạn cùng lớp, em có thể chia
-sẻ chuyện này với giáo viên tham vấn học đường? Khi nào em nên đến gặp
-nhà
-tham vấn?
-Giống như khi bị sổ mũi, đau đầu… chúng ta tìm đến bác sỹ y khoa, khi có
-những
-vấn đề về tinh thần chúng ta cũng nên tìm gặp nhà tham vấn tâm lý. Bạn có
-thể
-tìm gặp nhà tham vấn trong những trường hợp sau:
-• Khi bạn cảm thấy không hài lòng, khó chịu hoặc bất lực trong mối quan
-hệ nào đó với những người xung quanh: bạn bè, gia đình, người yêu...
-• Khi chính bạn là người gây bất bình cho những người xung quanh.
-• Khi bạn hoặc những người xung quanh bạn nhận thấy gần đây ở bạn xuất
-hiện những cá tính hiếm khi có, hoặc không có trong hành động tiền lệ
-của bạn.
-• Khi bạn cảm thấy cô đơn buồn chán, lo âu, căng thẳng và sợ hãi…những
-điều này lặp đi lặp lại và ảnh hưởng đến cuộc sống hiện tại của bạn.
-• Khi bạn tự cảm thấy hoặc người bên cạnh bạn nhận thấy bạn nói nhiều
-hoặc không muốn giao tiếp trong một thời điểm nào đó và luôn không
-cảm thấy hài lòng trong cuộc sống hiện tại.
-• Khi bạn cảm thấy không thích nghi hoặc khó thích nghi, điều này ảnh
-hưởng đến mục tiêu hoặc những hoạt động bình thường của bạn và
-những người xung quanh.
-• Khi bạn luôn có những ý nghĩ tiêu cực, và có ý đinh tự sát.
-Chính vì vậy em hoàn toàn có thể chia sẻ về mối quan hệ của mình với cô
-Chatbot Knowledge 9
-bạn
-cùng lớp với giáo viên phụ trách phòng tham vấn học đường.
-10. Em có nhiều vấn đề cần chia sẻ nhưng những vấn đề này rất lộn xộn. Em
-không thể sắp xếp chúng thành một câu chuyện rõ ràng và mạch lạc. Điều
-này
-có làm giáo viên tham vấn không hài lòng? Em nên chuẩn bị gì khi gặp
-NTV?
-Em có thể chia sẻ câu chuyện của mình theo trình tự những gì em đang
-nghĩ. Không nhất thiết phải trình bày mạch lạc, rõ ràng, có mở đầu, có kết
-thúc.
-Giáo viên tham vấn sẽ có những câu hỏi cần thiết để giúp em hệ thống vấn
-đề và
-tìm ra phương hướng giải quyết. Thái độ trung thực và hợp tác trong việc
-chia
-sẻ vấn đề của mình sẽ ảnh hưởng rất nhiều đến hiệu quả buổi tham vấn
-11. Một buổi tham vấn tâm lý thường mất bao lâu? Lịch học của em khá dày
-đặc , em có thể tranh thủ giờ ra chơi để đến phòng tham vấn học đường
-chia
-sẻ vấn đề của mình?
-Tham vấn là một tiến trình lâu dài, phụ thuộc vào nhiều yếu tố như: mức độ
-phối
-hợp, mong muốn giải quyết vấn đề của thân chủ, mức độ nghiêm trọng của
-vấn
-đề. Có những vấn đề được giải quyết sau một vài buổi tham vấn (mỗi buổi
-từ 45
-60 phút), cũng có những vấn đề mất nhiều thời gian hơn, kéo dài vài tháng
-hoặc
-cả năm.
-Việc bạn tranh thủ tìm đến phòng tham vấn trong giờ ra chơi, việc chia sẻ
-trong tâm trạng thấp thỏm lo “sắp đến giờ vào học” sẽ gây khó khăn cho
-chính bạn và nhà tham vấn trong việc tìm ra phương hướng giải quyết vấn
-đề.
-1. Nếu em gửi thư đến phòng tham vấn học đường thì sau bao nhiêu ngày em
-có thể nhận được thư trả lời, và nhận bằng cách nào?
-Em có thể liên hệ trực tiếp với giáo viên phụ trách phòng tham vấn học
-đường để
-nhận được thư trả lời. Thời gian trả lời thư phụ thuộc vào mức độ khẩn cấp,
-Chatbot Knowledge 10
-nghiêm trọng của sự việc. Nhưng chậm nhất là sau 3 ngày làm việc (không
-tính
-ngày lễ, chủ nhật) các em sẽ nhận được thư trả lời. Tuy nhiên, tính tương tác
-của
-hình thức tham vấn qua thư chưa cao, giáo viên không thể làm rõ một số nội
-dung
-trong thư. Vì vậy, để việc tham vấn hiệu quả hơn em có thể gửi mail, hoặc
-tham
-gia trò chuyện trực tuyến tại địa chỉ: 
-tuvanhocduongtcb@gmail.com
-13 Văn phòng Tham vấn tâm lý học đường của trường gồm những hoạt
-động
-nào?
-Hoạt động của văn phòng Tham vấn tâm lý học đường của trường THPT
-Bình
-Minh tập trung vào công tác can thiệp sớm nhằm ngăn ngừa những tổn
-thương về
-mặt tinh thần, hành vi và thái độ của học sinh. Thúc đẩy các giá trị của mỗi
-học
-sinh và giúp các em có khả năng đối mặt với khó khăn một cách hiệu quả ở
-trường.
-Phòng Tham vấn tâm lý học đường hỗ trợ học sinh các vấn đề sau:Bạo lực
-học
-đường; Bắt nạt học đường; Các rối loạn về xã hội và hành vi; Việc sợ đi
-học/sợ
-đến trường; Việc trốn học; Khó khăn trong học tập, ví dụ như kết quả học
-tập sa
-sút; Phân loại và chuyển gửi đến các dịch vụ trợ giúp chuyên nghiệp
+1. Tham vấn là gì? Sự khác nhau giữa tham vấn tâm lý và tư vấn tâm lý?
+Tham vấn là một tiến trình tương tác giữa nhà tham vấn (NTV) và thân chủ (TC) – người đang có vấn đề, khó khăn về tâm lý muốn được giúp đỡ nhằm giúp TC chấp nhận thực tế của mình, xác định tiềm năng bản thân từ đó tự giải quyết vấn đề của mình.
+Tâm lý là một ngành khoa học khá mới mẻ ở VN, chính vì vậy hiện nay nước ta vẫn chưa thống nhất về việc sử dụng khái niệm tham vấn hay tư vấn tâm lý. Tuy nhiên giữa tư vấn và tham vấn có những nét khác biệt khá cơ bản.
+2. Nhà Tâm lý học đường -  họ là ai?
+Nhà tâm lý học đường là một nhà sư phạm được cấp bằng đào tạo về tham vấn học đường với những ký năng chuyên biệt để hỗ trợ việc học, nhu cầu phát triển cá nhân, xã hội và nghề nghiệp của học sinh.
+Ở các nước phát triển, nhà tâm lý học đường (School Psychologist) là thành phần không thể thiếu trong hệ thống trường học. Nhiệm vụ chính của họ là giúp học sinh thành công trong học tập, xã hội và đời sống tình cảm. Ngoài ra họ còn phối hợp với giáo viên, phụ huynh, các nhà chuyên môn khác nhằm tạo môi trường học tập an toàn, lành mạnh cho tất cả  học sinh.
+Lắng nghe - Một trong những kĩ năng quan trọng của nhân viên tham vấn học đường
+3. Nhà tham vấn có thể biết được suy nghĩ của người khác?
+Nhiều học sinh không muốn hoặc xấu hổ  khi nói ra những suy nghĩ, diễn biến tâm lý của mình, cho rằng chỉ cần vài câu đơn giản thì nhà tham vấn có thể đoán được những suy nghĩ trong lòng mình, nếu không thì cho rằng trình độ của người tham vấn không cao. Thực ra, nhà tham vấn cũng là người, việc am hiểu ngôn ngữ cơ thể có thể giúp nhà họ nhận biết những mâu thuẫn giữa lời nói và cử chỉ của học sinh, nhưng cũng không thể giúp họ biết được học sinh thật sự đang nghĩ gì. Vì vậy việc cung cấp thông tin rõ ràng, tường tận sẽ giúp tiến trình tham vấn hiệu quả hơn.
+4. Giáo viên phụ trách phòng tham vấn học đường sẽ  giúp giáo viên trừng trị những học sinh chưa ngoan?
+Việc học sinh tự nguyện tìm đến hoặc được gửi đến phòng tham vấn tâm lý nhằm mục đích lắng nghe các em, hiểu được những suy nghĩ, tâm tư tình cảm của các em chứ không phải các em được gửi đến phòng tham vấn để chịu một hình thức trừng phạt nào cả. Tuy nhiên, trong khả năng chuyên môn của mình, các nhà tham vấn sẽ dùng các kỹ năng để tiếp cận các em, giúp các em hiểu hơn về những suy nghĩ, tình cảm, và hành động của mình để từ đó có thể có được những thay đổi tích cực.
+5. Tham vấn tâm lý ở trường là dành riêng cho học sinh hay là cho cả các bậc phụ huynh?
+Mục đích của tham vấn trường học là giúp đỡ học sinh và gia đình cũng là một yếu tố trong cuộc sống của học sinh. Vì vậy, khi các bậc phụ huynh có nhu cầu trao đổi và cần sự trợ giúp, các bậc phụ huynh có thể đăng ký để được tham vấn. Tuy nhiên, trong những trường hợp cần thiết, cán bộ tham vấn có thể giới thiệu các bậc phụ huynh đến các dịch vụ trợ giúp có hiệu quả hơn như đến phòng tham vấn gia đình, tham gia các lớp kỹ năng….
+6. Có phải những học sinh tìm đến phòng tham vấn học đường đều là những học sinh “có vấn đề”?
+Ở nước ta tham vấn tâm lý nói chung và tham vấn học đường nói riêng là lĩnh vực mới và phát triền tương đối muộn, đa số mọi người còn khá e ngại trong việc tiếp cận với các hoạt động này. Học sinh thông thường đều nhìn trước nhìn sau, lấy hết can đảm mới dám bước vào phòng tham vấn, dưới sự bảo đảm nhiều lần của nhà tham vấn mới dám bộc lộ tâm trạng, tình cảm thật của mình. Vì trong mắt nhiều người, người đến phòng tham vấn là những người không bình thường, có vấn đề về tâm lý hoặc bệnh tinh thần. Thực ra, đại đa số  những học sinh tìm đến phòng tham vấn học đường đều là những người có tâm lý bình thường. Trong cuộc sống, các em gặp phải những vấn đề mà bản thân  không thể giải quyết được như: vấn đề học tập, vấn đề trong giao tiếp, vấn đề trong tình yêu, trong quan hệ với gia đình, lựa chọn nghề nghiệp… Những vấn đề này là một bộ phận trong cuộc sống của chúng ta, việc tìm đến phòng tâm lý học đường cho thấy những học sinh này biết quan tâm, chăm sóc sức khỏe tinh thần của mình và có mục tiêu cuộc sống  tương đối cao, hy vọng thông qua việc tham vấn để tự hoàn thiện bản thân, không tránh né, phủ nhận vấn đề.
+Khi mệt mỏi, căng thẳng do học tập học sinh có thể tìm đến  P. TVHĐ để được hỗ trợ
+7. Em có thể chia sẻ những điều bức xúc của mình về giáo viên dạy toán với giáo viên phụ trách phòng tham vấn học đường? Liệu những điều này có bị tiết lộ? Em sẽ bị  giáo viên dạy toán ”đì” trong tương lai?
+Một trong những nguyên tắc cơ bản nhất của tham vấn tâm lý bảo mật thông tin. Nhân viên tham vấn học đường sẽ có trách nhiệm bảo mật tất cả những thông tin học sinh cung cấp cho mình và có thể phải chịu trách nhiệm trước pháp luật nếu cố tình tiết lộ thông tin của học sinh. Thông tin chỉ được tiết lộ trong các trường hợp sau: học sinh cho phép tiết lộ, chia sẻ thông tin; học sinh có nguy cơ làm hại đến bản thân và người khác (có ý định tự tử hoặc giết người); do yêu cầu của các cơ quan an ninh, pháp luật (phải thông báo cho học sinh biết). Vì vậy các em học sinh hoàn toàn có thể yên tâm khi chia sẻ câu chuyện với nhà tham vấn!
+8. Những người trẻ tuổi, chưa có nhiều kinh nghiệm sống có thể làm tốt công tác tham vấn tâm lý?
+Không thể phủ nhận một điều, những nhà tham vấn có nhiều kinh nghiêm sống sẽ dễ dàng hơn trong việc thấu cảm và nhìn nhận vấn đề của thân chủ. Tuy nhiên một NTV lớn tuổi và có nhiều kinh nghiệm chưa hẳn là một nhà tham vấn giỏi. Vì một NTV tâm lý giỏi phải là người có những năng lực và phẩm chất khá riêng biệt. Thứ nhất họ phải là người có kiến thức về quá trình phát triển tâm lý ở người: nhận thức, cảm xúc và hành vi của con người. Thứ hai, họ phải là người có khả năng giao tiếp, lắng nghe cũng như biết cách khai thác các cảm xúc, nhận thức và các biểu hiện của TC. Họ được đào tạo cơ bản về kỹ năng tham vấn cũng như các lớp học dành cho việc trợ giúp tâm lý cho TC. Họ cũng là người có những phẩm chất đặc biệt dành cho người làm tham vấn như khả năng chấp nhận, khả năng thấu cảm, sự trung thực…Do vậy độ tuổi hay trải nghiệm của NTV không quyết định mức độ thành công của buổi tham vấn.
+9. Em  đang gặp khó khăn trong quan hệ với cô bạn cùng lớp, em có thể chia sẻ chuyện này với giáo viên tham vấn học đường? Khi nào em nên đến gặp nhà tham vấn?
+Giống như khi bị sổ mũi, đau đầu… chúng ta tìm đến bác sỹ y khoa, khi có những vấn đề về tinh thần chúng ta cũng nên tìm gặp nhà tham vấn tâm lý. Bạn có thể tìm gặp nhà tham vấn trong những trường hợp sau:
+•	Khi bạn cảm thấy không hài lòng, khó chịu hoặc bất lực trong mối quan hệ nào đó với những người xung quanh: bạn bè, gia đình, người yêu...
+•	Khi chính bạn là người gây bất bình cho những người xung quanh.
+•	Khi bạn hoặc những người xung quanh bạn nhận thấy gần đây ở bạn xuất hiện những cá tính hiếm khi có, hoặc không có trong hành động tiền lệ của bạn.
+•	Khi bạn cảm thấy cô đơn buồn chán, lo âu, căng thẳng và sợ hãi…những điều này lặp đi lặp lại và ảnh hưởng đến cuộc sống hiện tại của bạn.
+•	Khi bạn tự cảm thấy hoặc người bên cạnh bạn nhận thấy bạn nói nhiều hoặc không muốn giao tiếp trong một thời điểm nào đó và luôn không cảm thấy hài lòng trong cuộc sống hiện tại.
+•	Khi bạn cảm thấy không thích nghi hoặc khó thích nghi, điều này ảnh hưởng đến mục tiêu hoặc những hoạt động bình thường của bạn và những người xung quanh.
+•	Khi bạn luôn có những ý nghĩ tiêu cực, và có ý đinh tự sát.
+Chính vì vậy em hoàn toàn có thể chia sẻ về mối quan hệ của mình với cô bạn cùng lớp với giáo viên phụ trách phòng tham vấn học đường.
+10. Em có nhiều vấn đề cần chia sẻ nhưng những vấn đề này rất lộn xộn. Em không thể sắp xếp chúng thành một câu chuyện rõ ràng và mạch lạc. Điều này có làm giáo viên tham vấn không hài lòng? Em nên chuẩn bị gì khi gặp NTV?
+Em có thể chia sẻ câu chuyện của mình theo trình tự những gì em đang nghĩ. Không nhất thiết phải trình bày mạch lạc, rõ ràng, có mở đầu, có kết thúc. Giáo viên tham vấn sẽ có những câu hỏi cần thiết để giúp em hệ thống vấn đề và tìm ra phương hướng giải quyết. Thái độ trung thực và hợp tác trong việc chia sẻ vấn đề của mình sẽ ảnh hưởng rất nhiều đến hiệu quả buổi tham vấn
+11. Một buổi tham vấn tâm lý thường mất bao lâu? Lịch học của em khá dày đặc , em có thể tranh thủ giờ ra chơi để đến phòng tham vấn học đường chia sẻ vấn đề của mình?
+Tham vấn là một tiến trình lâu dài, phụ thuộc vào nhiều yếu tố như: mức độ phối hợp, mong muốn giải quyết vấn đề của thân chủ, mức độ nghiêm trọng của vấn đề. Có những vấn đề được giải quyết sau một vài buổi tham vấn (mỗi buổi từ 45 - 60 phút), cũng có những vấn đề mất nhiều thời gian hơn, kéo dài vài tháng hoặc cả năm.
+Việc bạn tranh thủ tìm đến phòng tham vấn trong giờ ra chơi, việc chia sẻ trong tâm trạng thấp thỏm lo “sắp đến giờ vào học” sẽ gây khó khăn cho chính bạn và nhà tham vấn trong việc tìm ra phương hướng giải quyết vấn đề.
+12. Nếu em gửi thư đến phòng tham vấn học đường thì sau bao nhiêu ngày em có thể nhận được thư trả lời, và nhận bằng cách nào?
+Em có thể liên hệ trực tiếp với giáo viên phụ trách phòng tham vấn học đường để nhận được thư trả lời. Thời gian trả lời thư phụ thuộc vào mức độ khẩn cấp, nghiêm trọng của sự việc. Nhưng chậm nhất là sau 3 ngày làm việc (không tính ngày lễ, chủ nhật)  các em sẽ nhận được thư trả lời. Tuy nhiên, tính tương tác của hình thức tham vấn qua thư chưa cao, giáo viên không thể làm rõ một số nội dung trong thư. Vì vậy, để việc tham vấn hiệu quả hơn em có thể gửi mail, hoặc tham gia trò chuyện trực tuyến tại  địa chỉ: tuvanhocduongtcb@gmail.com
+13 Văn phòng Tham vấn tâm lý học đường của trường  gồm những hoạt động nào?
+Hoạt động của văn phòng Tham vấn tâm lý học đường của trường THPT Bình Minh tập trung vào công tác can thiệp sớm nhằm ngăn ngừa những tổn thương về mặt tinh thần, hành vi và thái độ của học sinh. Thúc đẩy các giá trị của mỗi học sinh và giúp các em có khả năng đối mặt với khó khăn một cách hiệu quả ở trường.
+Phòng Tham vấn tâm lý học đường hỗ trợ học sinh các vấn đề sau:Bạo lực học đường; Bắt nạt học đường; Các rối loạn về xã hội và hành vi; Việc sợ đi học/sợ đến trường; Việc trốn học; Khó khăn trong học tập, ví dụ như kết quả học tập sa sút; Phân loại và chuyển gửi đến các dịch vụ trợ giúp chuyên nghiệp
 14 Cách thức hỗ trợ từ Văn phòng Tham vấn tâm lý học đường?
-Phòng Tham vấn tâm lý học đường sẽ đồng hành cùng thầy/cô, phụ huynh
-và các
-con tìm được lời giải cho vấn đề của riêng mình với các hình thức như:
-• -Tư vấn cá nhân cho những học sinh gặp khó khăn;
-• -Tư vấn cho nhóm học sinh (nhỏ hay lớn);
-• -Tổ chức các buổi thảo luận, hội thảo cho phụ huynh về tâm lý vị thành
-niên và kỹ năng làm cha mẹ;
-• -Cố vấn và phối hợp với gia đình, giáo viên, nhân viên và ban quản lý
-nhà trường trong việc tìm kiếm giải pháp đáp ứng các nhu cầu và chăm
-Chatbot Knowledge 11
-sóc sức khỏe tinh thần cho học sinh;
-• -Cung cấp và chia sẻ những thông tin và nguồn lực hữu ích cho giáo
-viên và phụ huynh.
-15 Là học sinh, con sẽ được giúp đỡ như thế nào?
-Con sẽ có một nơi chia sẻ tất cả những vấn đề được liệt kê ở trên. Tại Văn
-phòng,
-con sẽ được gặp riêng, ở đó, có thể bày tỏ và được giải đáp về những lo
-lắng trước
-sự phát triển cơ thể, những thay đổi cảm xúc và hành động của bản thân.
-Con sẽ
-được tư vấn để tự giải quyết các rắc rối trong tình bạn, tình bạn khác giới,
-mối
-quan hệ với cha mẹ, thầy cô.
+Phòng Tham vấn tâm lý học đường sẽ đồng hành cùng thầy/cô, phụ huynh và các con tìm được lời giải cho vấn đề của riêng mình với các hình thức như:
+•	-Tư vấn cá nhân cho những học sinh gặp khó khăn;
+•	-Tư vấn cho nhóm học sinh (nhỏ hay lớn);
+•	-Tổ chức các buổi thảo luận, hội thảo cho phụ huynh về tâm lý vị thành niên và kỹ năng làm cha mẹ;
+•	-Cố vấn và phối hợp với gia đình, giáo viên, nhân viên và ban quản lý nhà trường trong việc tìm kiếm giải pháp đáp ứng các nhu cầu và chăm sóc sức khỏe tinh thần cho học sinh;
+•	-Cung cấp và chia sẻ những thông tin và nguồn lực hữu ích cho giáo viên và phụ huynh.
+15  Là học sinh, con sẽ được giúp đỡ như thế nào?
+Con sẽ có một nơi chia sẻ tất cả những vấn đề được liệt kê ở trên. Tại Văn phòng, con sẽ được gặp riêng, ở đó, có thể bày tỏ và được giải đáp về những lo lắng trước sự phát triển cơ thể, những thay đổi cảm xúc và hành động của bản thân. Con sẽ được tư vấn để tự giải quyết các rắc rối trong tình bạn, tình bạn khác giới, mối quan hệ với cha mẹ, thầy cô.
 16 Là cha mẹ, chúng tôi được giúp đỡ các vấn đề với con cái mình ra sao?
-Cha mẹ đóng vai trò rất lớn trong việc là điểm tựa hay định hướng cho con
-mình
-phát triển lành mạnh. Tuy thế, khi đối diện với sự trưởng thành của con cái,
-đặc
-biệt qua tuổi dậy thì và tuổi vị thành niên, việc cha mẹ gặp khó khăn là điều
-dễ
-hiểu. Khi cha mẹ gặp những vấn đề đó, Văn phòng Tham vấn tâm lý học
-đường
-sẵn sàng lắng nghe và cố vấn cho cha mẹ các thông tin khoa học về sự
-phát triển
-của con cũng như kỹ năng làm cha mẹ tích cực như cách thức nói chuyện,
-giải
-quyết xung đột với con hay đặt mục tiêu ...
-17 Nguyên tắc làm việc của Văn phòng Tham vấn tâm lý học đường của
-trường
-là gì?
+Cha mẹ đóng vai trò rất lớn trong việc là điểm tựa hay định hướng cho con mình phát triển lành mạnh. Tuy thế, khi đối diện với sự trưởng thành của con cái, đặc biệt qua tuổi dậy thì và tuổi vị thành niên, việc cha mẹ gặp khó khăn là điều dễ hiểu. Khi cha mẹ gặp những vấn đề đó, Văn phòng Tham vấn tâm lý học đường sẵn sàng lắng nghe và cố vấn cho cha mẹ các thông tin khoa học về sự phát triển của con cũng như kỹ năng làm cha mẹ tích cực như cách thức nói chuyện, giải quyết xung đột với con hay đặt mục tiêu ...
+17 Nguyên tắc làm việc của Văn phòng Tham vấn tâm lý học đường của trường là gì?
 Chúng tôi làm việc theo nguyên tắc:
 Nguyên tắc số 1: Lắng nghe và tôn trọng
-Lắng nghe, tôn trọng là thầy/cô, PH và các con sẽ được chia sẻ bất cứ điều
-gì
-mình muốn, chúng tôi không đánh giá đúng hay sai và hoàn toàn chấp nhận
-và
-tôn trọng quan điểm cũng như chính con người bạn.
+Lắng nghe, tôn trọng là thầy/cô, PH và các con sẽ được chia sẻ bất cứ điều gì mình muốn, chúng tôi không đánh giá đúng hay sai và hoàn toàn chấp nhận và tôn trọng quan điểm cũng như chính con người bạn.
 Nguyên tắc số 2: Bảo mật thông tin
-Chatbot Knowledge 12
-Văn phòng Tham vấn tâm lý học đườngluôn tôn trọng sự riêng tư của mỗi
-người
-vì vậy chúng tôi cam kết mọi vấn đề thầy/ cô, PH và học sinh chia sẻ với
-chúng
-tôi sẽ được giữ bí mật. Cụ thể:
--Trong trường hợp học sinh tự mình tới phòng Tham vấn tâm lý học đường,
-mọi
-vấn đề học sinh chia sẻ với nhà tư vấn sẽ được giữ bí mật.
--Chúng tôi chỉ tiết lộ thông tin của học sinh với những người có trách nhiệm
-(phụ
-huynh học sinh, cố vấn…) trong ba trường hợp sau:
-2. Học sinh đang có ý định gây hại cho bản thân hoặc gây nguy hiểm cho
-người
-khác ;
-3. Học sinh đồng ý chia sẻ thông tin với những người liên quan để được hỗ trợ
-tốt hơn;
-4. Học sinh báo cáo về việc đang bị đe dọa.
--Trong trường hợp học sinh được chuyển tới phòng tư vấn bởi cha mẹ, thầy
-cô,
-chúng tôi sẽ trao đổi với người đại diện này và những người có liên quan
-những
-thông tin khái quát về quá trình tư vấn nhằm phối hợp trợ giúp học sinh tốt
-hơn.
+Văn phòng Tham vấn tâm lý học đườngluôn tôn trọng sự riêng tư của mỗi người vì vậy chúng tôi cam kết mọi vấn đề thầy/ cô, PH và học sinh chia sẻ với chúng tôi sẽ được giữ bí mật. Cụ thể:
+-Trong trường hợp học sinh tự mình tới phòng Tham vấn tâm lý học đường, mọi vấn đề học sinh chia sẻ với nhà tư vấn sẽ được giữ bí mật.
+-Chúng tôi chỉ tiết lộ thông tin của học sinh với những người có trách nhiệm (phụ huynh học sinh, cố vấn…) trong ba trường hợp sau:
+1) Học sinh đang có ý định gây hại cho bản thân hoặc gây nguy hiểm cho người khác ;
+2) Học sinh đồng ý chia sẻ thông tin với những người liên quan để được hỗ trợ tốt hơn;
+3) Học sinh báo cáo về việc đang bị đe dọa.
+-Trong trường hợp học sinh được chuyển tới phòng tư vấn bởi cha mẹ, thầy cô, chúng tôi sẽ trao đổi với người đại diện này và những người có liên quan những thông tin khái quát về quá trình tư vấn nhằm phối hợp trợ giúp học sinh tốt hơn.
 Nguyên tắc số 3: Cung cấp giải pháp
-Đến với phòng Tham vấn tâm lý học đường Phụ huynh và các con không
-chỉ
-được lắng nghe, thấu hiểu, chia sẻ mà còn được cung cấp những thông tin
-mới
-cập nhật cũng như trao đổi để tìm ra các giải pháp cho những tình huống cụ
-thể
-đang gặp phải.
+Đến với phòng Tham vấn tâm lý học đường Phụ huynh và các con không chỉ được lắng nghe, thấu hiểu, chia sẻ mà còn được cung cấp những thông tin mới cập nhật cũng như trao đổi để tìm ra các giải pháp cho những tình huống cụ thể đang gặp phải.
 Nguyên tắc số 4: Làm việc theo qui trình
-Tại phòng Tham vấn tâm lý học đường, các vấn đề tham vấn được thực hiện
-theo
-quy trình năm bước khép kín, đảm bảo tính khoa học và tính bảo mật. Quy
-trình
-chung như sau:
-Chatbot Knowledge 13
-1)Phỏng vấn trực tiếp người phát hiện vấn đề (phụ huynh, học sinh, giáo
-viên)
+Tại phòng Tham vấn tâm lý học đường, các vấn đề tham vấn được thực hiện theo quy trình năm bước khép kín, đảm bảo tính khoa học và tính bảo mật. Quy trình chung như sau:
+1)Phỏng vấn trực tiếp người phát hiện vấn đề (phụ huynh, học sinh, giáo viên)
 2)Gặp người cần tư vấn và mở hồ sơ tư vấn
-3)Sau 2-3 buổi gặp người cần tư vấn, tư vấn viên lên kế hoạch tư vấn (số
-buổi,
-tần suất, những hỗ trợ cần thiết) và trao đổi với phụ huynh và giáo viên chủ
-nhiệm.
-4)Đánh giá mỗi 3 buổi tư vấn và giữ liên hệ thường xuyên với phụ huynh và
-giáo
-viên (chủ nhiệm và bộ môn) đối với đối tượng tư vấn là học sinh.
-5. Kết thúc ca tư vấn, đánh giá ca và kế hoạch theo dõi tiếp theo.
+3)Sau 2-3 buổi gặp người cần tư vấn, tư vấn viên lên kế hoạch tư vấn (số buổi, tần suất, những hỗ trợ cần thiết) và trao đổi với phụ huynh và giáo viên chủ nhiệm.
+4)Đánh giá mỗi 3 buổi tư vấn và giữ liên hệ thường xuyên với phụ huynh và giáo viên (chủ nhiệm và bộ môn) đối với đối tượng tư vấn là học sinh.
+5) Kết thúc ca tư vấn, đánh giá ca và kế hoạch theo dõi tiếp theo.
 GIỚI THIỆU VỀ TRƯỜNG THCS HẬU GIANG
-• Lịch sử thành lập trường
-Trường THCS Hậu Giang – Quận 11 được xây dựng từ rất lâu, là một
-trong những ngôi trường có bề dày lịch sử và thành tích. Ngôi trường đã
-gắn bó với biết bao nhiêu thế hệ học sinh giờ đây ngày một phát triển, nối
-tiếp truyền thống chăm ngoan học giỏi của các thế hệ đi trước.
-Trường THCS Hậu Giang là trường Công lập, tọa lạc tại số 08 Lò Siêu
-phường 16 quận 11, được xây dựng và đi vào hoạt động vào năm 1973.
-Trước năm 1975, trường được mang tên là trường Phổ thông cấp 1, 2
-Đồng Tâm do Trung tâm Hoa ngữ quản lý. Từ năm 1975 trường có tên là
-trường Phổ thông cơ sở cấp I, II Hậu Giang. Bắt đầu năm học 1981-1982
-trường chỉ còn các lớp cấp II công lập theo quyết định số 358/QĐ-UB
-ngày 24/10/1981 của Ủy ban Nhân dân quận 11 về việc công nhận mạng
-lưới trường học năm 1981-1982.
-• Cơ sở vật chất
-Trường Trung học cơ sở Hậu Giang có nhiệm vụ tiếp nhận giảng dạy và
-giáo dục học sinh từ lớp 6 đến lớp 9 trên địa bàn phường 16 và các
-phường lân cận. Năm 2006 trường được sửa chữa, nâng cấp 1 trệt 2 lầu
-gồm 42 phòng học, 11 phòng chức năng và sân chơi với diện tích đất xây
-dựng 3185m2
-, diện tích sàn xây dựng 9027m2 trên tổng diện tích khuôn
-viên 7401,6m2
-. Khuôn viên trường tách biệt, yên tĩnh, an ninh, các lớp
-học thoáng mát tạo điều kiện thuận lợi cho việc giảng dạy và học
-tập. Hiện nay, trường THCS Hậu Giang đang trong quá trình thay đổi về
-cơ sở vật chất, hướng tới thực hiện xã hội hóa, nhằm mang lại môi trường
-học tập tốt nhất cho học sinh.
-Chatbot Knowledge 14
-• Nhân sự
-Về nhân sự, trường có tổng cộng 87 cán bộ, giáo viên, nhân viên được
-chia thành 12 tổ chuyên môn, 01 tổ Văn phòng. Cùng với hơn 1500 học
-sinh thuộc 38 lớp của 4 khối 6, 7, 8, 9 chủ yếu ở địa bàn phường 16 và
-các phường lân cận thuộc quận 11. Các tổ chức chính trị, Đoàn thể có
-trong trường là Chi bộ Đảng, Công đoàn cơ sở, Chi Đoàn Thanh niên
-cộng sản Hồ Chí Minh, Đội Thiếu Niên tiền phong Hồ Chí Minh, luôn
-đạt thành tích vững mạnh xuất sắc.
-• Thành tích đạt được và hướng phát triển nhà trường
-Trường trung học cơ sở Hậu Giang có bộ máy tổ chức của nhà trường từ
-cán bộ
-quản lý đến các tổ chuyên môn được bố trí đủ về số lượng, trình độ đào tạo
-và
-có đủ năng lực, kinh nghiệm trong việc quản lý điều hành các hoạt động
-trong
-nhà trường theo quy định của Điều lệ trường trung học. Công tác quản lý
-chất
-lượng, trong những năm qua luôn là mối quan tâm hàng đầu của lãnh đạo
-nhà
-trường và được tổ chức thực hiện chặt chẽ, có hiệu quả từ cán bộ quản lý
-đến
-các tổ chuyên môn.
-Nhà trường luôn chú trọng việc đổi mới phương pháp dạy học, dạy học theo
-định hướng Stem, ứng dụng công nghệ thông tin và đổi mới kiểm tra đánh
-giá
-được đẩy mạnh. Mỗi năm trường luôn bồi dưỡng học sinh đạt được danh
-hiệu
-học sinh giỏi cấp Quận, cấp Thành phố và phong trào thể dục thể thao đạt
-thành
-tích cấp Quận, Thành phố, Quốc gia. Đặc biệt do trường nằm trong khu dân
-cư
-người Hoa nên trường có lớp tăng cường tiếng Trung và hằng năm đều đạt
-nhiều học sinh giỏi tiếng Trung cấp Thành phố. Trường hiện tổ chức lớp
-tăng
-cường tiếng Anh, tăng cường tiếng Trung khối 6-7-8-9. Trong nhiều năm,
-giáo
-viên – công nhân viên và học sinh cùng hưởng ứng tích cực các cuộc vận
-động
-Chatbot Knowledge 15
-“Xây dựng trường học thân thiện, học sinh tích cực”, “Học tập và làm theo
-tấm
-gương đạo đức Hồ Chí Minh”.
-Trong 5 năm qua, nhà trường rất chú trọng đến việc thực hiện đổi mới
-phương pháp và kỹ thuật dạy học tích cực. Học sinh được giáo dục kỹ năng
-sống, phát huy tính chủ động, sáng tạo; được học theo năng lực, phù hợp
-trình
-độ của bản thân và được giáo viên hướng dẫn tự học. Kết quả giáo dục toàn
-diện
-đang có những chuyển biến, liên tục đạt tỷ lệ tốt nghiệp trung học cơ sở
-100%.
-Với sự cố gắng của tập thể hội đồng nhà trường, năm học vừa qua nhà
-trường
-đã đạt danh hiệu “Tập thể lao động xuất sắc”, tạo được niềm tin của cha mẹ
-học
-sinh và cộng đồng xã hội đối với sự phát triển đi lên của nhà trường ./.
+•	Lịch sử thành lập trường
+Trường THCS Hậu Giang – Quận 11 được xây dựng từ rất lâu, là một trong những ngôi trường có bề dày lịch sử và thành tích. Ngôi trường đã gắn bó với biết bao nhiêu thế hệ học sinh giờ đây ngày một phát triển, nối tiếp truyền thống chăm ngoan học giỏi của các thế hệ đi trước.
+Trường THCS Hậu Giang là trường Công lập, tọa lạc tại số 08 Lò Siêu phường 16 quận 11, được xây dựng và đi vào hoạt động vào năm 1973. Trước năm 1975, trường được mang tên là trường Phổ thông cấp 1, 2 Đồng Tâm do Trung tâm Hoa ngữ quản lý. Từ năm 1975 trường có tên là trường Phổ thông cơ sở cấp I, II Hậu Giang.  Bắt đầu năm học 1981-1982 trường chỉ còn các lớp cấp II công lập theo quyết định số 358/QĐ-UB ngày 24/10/1981 của Ủy ban Nhân dân quận 11 về việc công nhận mạng lưới trường học năm 1981-1982.
+•	Cơ sở vật chất
+Trường Trung học cơ sở Hậu Giang có nhiệm vụ tiếp nhận giảng dạy và giáo dục học sinh từ lớp 6 đến lớp 9 trên địa bàn phường 16 và các phường lân cận. Năm 2006 trường được sửa chữa, nâng cấp 1 trệt 2 lầu gồm 42 phòng học, 11 phòng chức năng và sân chơi với diện tích đất xây dựng 3185m2, diện tích sàn xây dựng 9027m2 trên tổng diện tích khuôn viên 7401,6m2. Khuôn viên trường tách biệt, yên tĩnh, an ninh, các lớp học thoáng mát tạo điều kiện thuận lợi cho việc giảng dạy và học tập. Hiện nay, trường THCS Hậu Giang đang trong quá trình thay đổi về cơ sở vật chất, hướng tới thực hiện xã hội hóa, nhằm mang lại môi trường học tập tốt nhất cho học sinh.
+•	Nhân sự
+Về nhân sự, trường có tổng cộng 87 cán bộ, giáo viên, nhân viên được chia thành 12 tổ chuyên môn, 01 tổ Văn phòng. Cùng với hơn 1500 học sinh thuộc 38 lớp của 4 khối 6, 7, 8, 9 chủ yếu ở địa bàn phường 16 và các phường lân cận thuộc quận 11. Các tổ chức chính trị, Đoàn thể có trong trường là Chi bộ Đảng, Công đoàn cơ sở, Chi Đoàn Thanh niên cộng sản Hồ Chí Minh, Đội Thiếu Niên tiền phong Hồ Chí Minh, luôn đạt thành tích vững mạnh xuất sắc.
+•	Thành tích đạt được và hướng phát triển nhà trường
+Trường trung học cơ sở Hậu Giang có bộ máy tổ chức của nhà trường từ cán bộ quản lý đến các tổ chuyên môn được bố trí đủ về số lượng, trình độ đào tạo và có đủ năng lực, kinh nghiệm trong việc quản lý điều hành các hoạt động trong nhà trường theo quy định của Điều lệ trường trung học. Công tác quản lý chất lượng, trong những năm qua luôn là mối quan tâm hàng đầu của lãnh đạo nhà trường và được tổ chức thực hiện chặt chẽ, có hiệu quả từ cán bộ quản lý đến các tổ chuyên môn.
+Nhà trường luôn chú trọng việc đổi mới phương pháp dạy học, dạy học theo định hướng Stem, ứng dụng công nghệ thông tin và đổi mới kiểm tra đánh giá được đẩy mạnh. Mỗi năm trường luôn bồi dưỡng học sinh đạt được danh hiệu học sinh giỏi cấp Quận, cấp Thành phố và phong trào thể dục thể thao đạt thành tích cấp Quận, Thành phố, Quốc gia. Đặc biệt do trường nằm trong khu dân cư người Hoa nên trường có lớp tăng cường tiếng Trung và hằng năm đều đạt nhiều học sinh giỏi tiếng Trung cấp Thành phố. Trường hiện tổ chức lớp tăng cường tiếng Anh, tăng cường tiếng Trung khối 6-7-8-9. Trong nhiều năm, giáo viên – công nhân viên và học sinh cùng hưởng ứng tích cực các cuộc vận động “Xây dựng trường học thân thiện, học sinh tích cực”, “Học tập và làm theo tấm gương đạo đức Hồ Chí Minh”.
+    Trong 5 năm qua, nhà trường rất chú trọng đến việc thực hiện đổi mới phương pháp và kỹ thuật dạy học tích cực. Học sinh được giáo dục kỹ năng sống, phát huy tính chủ động, sáng tạo; được học theo năng lực, phù hợp trình độ của bản thân và được giáo viên hướng dẫn tự học. Kết quả giáo dục toàn diện đang có những chuyển biến, liên tục đạt tỷ lệ tốt nghiệp trung học cơ sở 100%. Với sự cố gắng của tập thể hội đồng nhà trường, năm học vừa qua nhà trường đã đạt danh hiệu “Tập thể lao động xuất sắc”, tạo được niềm tin của cha mẹ học sinh và cộng đồng xã hội đối với sự phát triển đi lên của nhà trường ./.
 Bao nhiêu điểm thì đạt môn tin học: Môn tin học từ 5 điểm trở lên là đạt
-Bao nhiêu điểm mới được học sinh tốt, cách tính điểm trung bình hệ số,
-Cách
-tính điểm cả năm học?bao nhiêu điểm thì đạt học sinh giỏi? bao nhiêu điểm
-thì
-đạt học sinh xuất sắc:
-Kết quả học tập trong từng học kỳ và cả năm học được đánh giá dựa trên
-các
-tiêu chí sau:
+Bao nhiêu điểm mới được học sinh tốt, cách tính điểm trung bình hệ số, Cách tính điểm cả năm học?bao nhiêu điểm thì đạt học sinh giỏi? bao nhiêu điểm thì đạt học sinh xuất sắc: 
+Kết quả học tập trong từng học kỳ và cả năm học được đánh giá dựa trên các tiêu chí sau:
 Mức Tốt:
 Đạt mức Đạt trong tất cả các môn học đánh giá bằng nhận xét.
-ĐTBmhk, ĐTBmcn phải đảm bảo đạt từ 6,5 điểm trở lên, bên cạnh đó thì
-cũng
-cần ít nhất 06 môn có ĐTBmhk, ĐTBmcn từ 8,0 điểm trở lên.
+ĐTBmhk, ĐTBmcn phải đảm bảo đạt từ 6,5 điểm trở lên, bên cạnh đó thì cũng cần ít nhất 06 môn có ĐTBmhk, ĐTBmcn từ 8,0 điểm trở lên.
 Mức Khá:
 Đạt mức Đạt trong tất cả các môn học đánh giá bằng nhận xét.
-ĐTBmhk, ĐTBmcn phải đảm bảo đạt từ 5,0 điểm trở lên, trong đó yêu cầu ít
-nhất 06 môn có ĐTBmhk, ĐTBmcn tối thiểu 6,5 điểm trở lên.
+ĐTBmhk, ĐTBmcn phải đảm bảo đạt từ 5,0 điểm trở lên, trong đó yêu cầu ít nhất 06 môn có ĐTBmhk, ĐTBmcn tối thiểu 6,5 điểm trở lên.
 Mức Đạt:
 Có tối đa 01 môn đánh giá mức Chưa đạt.
-ĐTBmhk, ĐTBmcn phải đạt từ 5,0 điểm trở lên, với ít nhất 06 môn học, và
-điều
-Chatbot Knowledge 16
-kiện tiên quyết là không có môn nào thấp hơn 3,5 điểm.
+ĐTBmhk, ĐTBmcn phải đạt từ 5,0 điểm trở lên, với ít nhất 06 môn học, và điều kiện tiên quyết là không có môn nào thấp hơn 3,5 điểm.
 Mức Chưa đạt: Cho những trường hợp khác.
-cho em biết tên tất cả thầy cô tin học, trường minh có bao nhiêu giáo viên
-dạy
-tin học: Tên 4 thầy cô môn tin học năm 2024-2025: cô Bảo Hạnh, cô Bích
-Ngọc, thầy Văn Thuận và thầy Chí Bình
-cho biết địa chỉ của Trường THCS Hậu Giang? Trường Trung học cơ sở Hậu
-Giang quận 11 có địa chỉ là 8 Lò Siêu, Phường 16, Quận 11, Tp.HCM
-cho biết tên các cô Ngữ Văn? Tên 4 thầy cô môn tin học năm 2024-2025:
-cô
-Bảo Hạnh, cô Bích Ngọc, thầy Văn Thuận và thầy Chí Bình
-Cách tính điểm trung bình môn: Điểm trung bình môn = (điểm kiểm tra
-miệng +
-2 x điểm giữa kỳ + 3 x điểm cuối kỳ) / 6
-Cho biết trường có bao nhiêu thầy cô: Trường Hậu Giang tổng cộng có 78
-thầy
-cô
-Làm sao để mình chuyển lớp qua (thường,tăng cường), mình nên nhờ/hỏi ai?
-Về
-việc xếp lớp sẽ liên hệ với bộ phận học vụ.
-Các môn năng khiếu của trường Hâu Giang: Trường hiện có 1 số môn năng
-khiếu như sau: Vẽ, Tin học, cầu lông, Thủ công
+cho em biết tên tất cả thầy cô tin học, trường minh có bao nhiêu giáo viên dạy tin học: Tên 4 thầy cô môn tin học năm 2024-2025: cô Bảo Hạnh, cô Bích Ngọc, thầy Văn Thuận và thầy Chí Bình
+cho biết địa chỉ của Trường THCS Hậu Giang? Trường Trung học cơ sở Hậu Giang quận 11 có địa chỉ là 8 Lò Siêu, Phường 16, Quận 11, Tp.HCM
+cho biết tên các cô Ngữ Văn? Tên 4 thầy cô môn tin học năm 2024-2025: cô Bảo Hạnh, cô Bích Ngọc, thầy Văn Thuận và thầy Chí Bình
+Cách tính điểm trung bình môn: Điểm trung bình môn = (điểm kiểm tra miệng + 2 x điểm giữa kỳ + 3 x điểm cuối kỳ) / 6
+Cho biết trường có bao nhiêu thầy cô: Trường Hậu Giang tổng cộng có 78 thầy cô
+Làm sao để mình chuyển lớp qua (thường,tăng cường), mình nên nhờ/hỏi ai? Về việc xếp lớp sẽ liên hệ với bộ phận học vụ.
+Các môn năng khiếu của trường Hâu Giang: Trường hiện có 1 số môn năng khiếu như sau: Vẽ, Tin học, cầu lông, Thủ công
 7 hằng đẳng thức đáng nhớ
-6. ( A + B )2 = A2 + 2AB + B2
+1) ( A + B )2 = A2 + 2AB + B2
 2)( A - B )2 = A2 - 2AB + B2
-7. A2 - B2 = ( A - B )( A + B )
-8. ( A + B )3 = A3 + 3A2B + 3AB2 + B3
-9. ( A - B )3 = A3 - 3A2B + 3AB2 - B3
-10. A3 + B3 = ( A + B )( A2 - AB + B2 )
-11. A3 - B3 = ( A - B )( A2 + AB + B2 )
-trường mình có bao nhiêu giáo viên dạy tin học: Năm 2024 trường có
-khoảng
-80 giáo viên
+3) A2 - B2 = ( A - B )( A + B )
+4) ( A + B )3 = A3 + 3A2B + 3AB2 + B3
+5) ( A - B )3 = A3 - 3A2B + 3AB2 - B3
+6) A3 + B3 = ( A + B )( A2 - AB + B2 )
+7) A3 - B3 = ( A - B )( A2 + AB + B2 )
+trường mình có bao nhiêu giáo viên dạy tin học: Năm 2024 trường có khoảng 80 giáo viên

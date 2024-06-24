@@ -34,8 +34,8 @@ python src/gradio_chatbot.py
 
 # Steps
 
-1. Tạo một file pdf dữ liệu đặt tên là "chatbot_knowledge.pdf", chứa các nội dung muốn chatbot đọc và trả lời, các câu hỏi của người dùng sẽ dựa vào nội dung đó để hỏi đáp.
-2. Load Model LLM & model embedding - có thể upload thêm file để load cùng dữ liệu "chatbot_knowledge.pdf"
+1. Tạo một file pdf dữ liệu đặt tên là "chatbot_knowledge.txt", chứa các nội dung muốn chatbot đọc và trả lời, các câu hỏi của người dùng sẽ dựa vào nội dung đó để hỏi đáp.
+2. Load Model LLM & model embedding - có thể upload thêm file để load cùng dữ liệu "chatbot_knowledge.txt"
 
 
 ## Nâng tầm hệ thống hỏi đáp tiếng Việt với RAG tiên tiến
@@ -50,7 +50,7 @@ Hệ thống được trang bị bộ đôi mô hình mạnh mẽ:
 **Khả năng vượt trội:**
 
 * **Hiểu tiếng Việt sâu sắc:** Nhờ sự kết hợp hoàn hảo giữa Fsoft-AIC/videberta-base và Vinallama-7b-chat, hệ thống có khả năng hiểu ngôn ngữ tiếng Việt một cách sâu sắc, nắm bắt chính xác ý đồ người dùng.
-* **Trả lời câu hỏi toàn diện:** Hệ thống có thể truy cập và xử lý thông tin từ nhiều nguồn khác nhau, cung cấp câu trả lời đầy đủ, chính xác và chi tiết cho mọi câu hỏi của người dùng.
+* **Trả lời câu hỏi toàn diện:** Hệ thống có thể truy cập và xử lý thông tin từ nhiều nguồn khác nhau, cung cấp câu trả lời đầy đủ, chính xác và chi tiết cho mọi câu hỏi của người dùng. 
 * **Hỗ trợ đa dạng:** Hệ thống có thể hỗ trợ nhiều tác vụ khác nhau như:
     * Tóm tắt văn bản
     * Dịch thuật
@@ -59,4 +59,4 @@ Hệ thống được trang bị bộ đôi mô hình mạnh mẽ:
 
 **Khả năng mở rộng:**
 
-Hệ thống được thiết kế linh hoạt, cho phép người dùng dễ dàng huấn luyện thêm mô hình trên dữ liệu chuyên ngành để đáp ứng nhu cầu cụ thể. Tuy nhiên, một người dùng mới hoàn toàn có thể chỉ cần thêm dữ liệu vào "chatbot_knowledge.pdf" là hệ thống sẽ hoạt động tốt.
+Hệ thống được thiết kế linh hoạt, cho phép người dùng dễ dàng huấn luyện thêm mô hình trên dữ liệu chuyên ngành để đáp ứng nhu cầu cụ thể. Tuy nhiên, một người dùng mới hoàn toàn có thể chỉ cần thêm dữ liệu vào "chatbot_knowledge.txt" là hệ thống sẽ hoạt động tốt.
