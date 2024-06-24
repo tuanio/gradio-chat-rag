@@ -21,6 +21,13 @@ def load_models(embedding_model, llm, do_quantize):
         model_setup.model,
         model_setup.tokenizer,
         model_setup.vectordb,
+        temperature=0.1,
+        max_new_tokens=1024,
+        repetition_penalty=1.2,
+        top_k=10,
+        top_p=0.95,
+        k_context=5,
+        num_return_sequences=1,
     )
     return success_prompt
 
@@ -42,13 +49,6 @@ conv_qa = Conversation_RAG()
 def bot(
     history,
     instruction="Bạn là trợ lý ảo thông minh. Bạn sẽ đọc nội dung từ ngữ cảnh để trả lời câu hỏi của người dùng. Trả lời ngắn gọn, đủ ý, nội dung bằng tiếng Việt.",
-    temperature=0.1,
-    max_new_tokens=1024,
-    repetition_penalty=1.2,
-    top_k=10,
-    top_p=0.95,
-    k_context=5,
-    num_return_sequences=1,
 ):
     chat_history_formatted = get_chat_history(history[:-1])
 
