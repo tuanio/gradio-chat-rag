@@ -30,9 +30,7 @@ def upload_and_create_vector_store(file, embedding_model):
     # Access the path of the saved file
     print(f"File saved to: {permanent_file_path}")
 
-    index_success_msg = create_vector_store_index(
-        permanent_file_path, embedding_model
-    )
+    index_success_msg = create_vector_store_index(permanent_file_path, embedding_model)
     return index_success_msg
 
 
@@ -50,6 +48,7 @@ def add_text(history, text):
 
 conv_qa = Conversation_RAG()
 
+
 def bot(
     history,
     instruction="Bạn là trợ lý ảo thông minh. Bạn sẽ đọc nội dung từ ngữ cảnh để trả lời câu hỏi của người dùng. Trả lời ngắn gọn, đủ ý, nội dung bằng tiếng Việt.",
@@ -61,7 +60,6 @@ def bot(
     k_context=5,
     num_return_sequences=1,
 ):
-
     qa, streamer = conv_qa.create_conversation(
         model_setup.model,
         model_setup.tokenizer,
@@ -79,7 +77,7 @@ def bot(
     chat_history_formatted = get_chat_history(history[:-1])
 
     def run_qa():
-        qa.invoke({"question": history[-1][0], "chat_history": ''})
+        qa.invoke({"question": history[-1][0], "chat_history": ""})
 
     t = Thread(target=run_qa)
     t.start()
@@ -105,4 +103,3 @@ def clear_cuda_cache():
     torch.cuda.empty_cache()
     gc.collect()
     return None
-

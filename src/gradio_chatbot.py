@@ -96,7 +96,10 @@ with gr.Blocks(
                         value="vilm/vinallama-7b-chat",
                         label="Select the LLM",
                     )
-                    do_quantize = gr.Checkbox(label="Do quantization 8-bit", info="Reduce memory by 2 (good for >10B models)")
+                    do_quantize = gr.Checkbox(
+                        label="Do quantization 8-bit",
+                        info="Reduce memory by 2 (good for >10B models)",
+                    )
 
                 with gr.Column(scale=1):
                     model_load_btn = gr.Button("Load model", variant="primary", scale=1)

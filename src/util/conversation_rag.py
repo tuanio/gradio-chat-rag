@@ -31,7 +31,7 @@ class Conversation_RAG:
         if self.hf_token:
             login(token=self.hf_token)
 
-        device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
+        device = f"cuda:{cuda.current_device()}" if cuda.is_available() else "cpu"
         # device = 'mps'
 
         if do_quantize:
@@ -50,14 +50,14 @@ class Conversation_RAG:
                 self.llm_repo_id,
                 trust_remote_code=True,
                 quantization_config=bnb_config,
-                device_map='auto',
+                device_map="auto",
                 torch_dtype=bfloat16,
             )
         else:
             model = transformers.AutoModelForCausalLM.from_pretrained(
                 self.llm_repo_id,
                 trust_remote_code=True,
-                device_map='auto',
+                device_map="auto",
                 torch_dtype=bfloat16,
             )
         model.eval()
@@ -77,11 +77,13 @@ class Conversation_RAG:
         repetition_penalty=1.1,
         top_k=20,
         top_p=0.95,
-        k_context=20,
+        k_context=5,
         num_return_sequences=1,
         instruction="Bạn là trợ lý ảo thông minh. Bạn sẽ đọc nội dung từ ngữ cảnh để trả lời câu hỏi của người dùng. Trả lời ngắn gọn, đủ ý, nội dung bằng tiếng Việt.",
-    ):  
-        streamer = transformers.TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+    ):
+        streamer = transformers.TextIteratorStreamer(
+            tokenizer, skip_prompt=True, skip_special_tokens=True
+        )
         generate_text = transformers.pipeline(
             model=model,
             tokenizer=tokenizer,
@@ -95,7 +97,7 @@ class Conversation_RAG:
             num_return_sequences=num_return_sequences,
             streamer=streamer,
             torch_dtype=bfloat16,
-            eos_token_id=tokenizer.eos_token_id
+            eos_token_id=tokenizer.eos_token_id,
         )
 
         condense_gen_text = transformers.pipeline(
@@ -110,7 +112,7 @@ class Conversation_RAG:
             top_p=top_p,
             torch_dtype=bfloat16,
             num_return_sequences=num_return_sequences,
-            eos_token_id=tokenizer.eos_token_id
+            eos_token_id=tokenizer.eos_token_id,
         )
 
         llm = HuggingFacePipeline(pipeline=generate_text)
