@@ -45,9 +45,9 @@ def bot(
     temperature=0.1,
     max_new_tokens=1024,
     repetition_penalty=1.1,
-    top_k=10,
+    top_k=30,
     top_p=0.95,
-    k_context=5,
+    k_context=20,
     num_return_sequences=1,
 ):
     chat_history_formatted = get_chat_history(history[:-1])
