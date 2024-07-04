@@ -28,7 +28,7 @@ class Conversation_RAG:
         )
 
         # if self.hf_token:
-        login(token='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')
+        login(token='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')
 
         device = f"cuda:{cuda.current_device()}" if cuda.is_available() else "cpu"
         # device = 'mps'
