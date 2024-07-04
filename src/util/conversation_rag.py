@@ -16,7 +16,6 @@ class Conversation_RAG:
         self,
         embedding_model_repo_id="sentence-transformers/all-roberta-large-v1",
         llm_repo_id="meta-llama/Llama-2-7b-chat-hf",
-        hf_token="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",
     ):
         self.hf_token = hf_token
         self.embedding_model_repo_id = embedding_model_repo_id
@@ -28,8 +27,8 @@ class Conversation_RAG:
             "./db/faiss_index", embedding_model, allow_dangerous_deserialization=True
         )
 
-        if self.hf_token:
-            login(token=self.hf_token)
+        # if self.hf_token:
+        login(token='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')
 
         device = f"cuda:{cuda.current_device()}" if cuda.is_available() else "cpu"
         # device = 'mps'
