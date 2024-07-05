@@ -16,6 +16,7 @@ class Conversation_RAG:
         self,
         embedding_model_repo_id="sentence-transformers/all-roberta-large-v1",
         llm_repo_id="meta-llama/Llama-2-7b-chat-hf",
+        hf_token='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'
     ):
         self.hf_token = hf_token
         self.embedding_model_repo_id = embedding_model_repo_id
