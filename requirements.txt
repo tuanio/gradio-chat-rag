@@ -12,3 +12,4 @@ langchain_experimental
 unstructured[all-docs]
 langchain-openai
 python-dotenv
+docx2txt
